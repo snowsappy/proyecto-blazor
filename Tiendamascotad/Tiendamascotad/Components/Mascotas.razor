@@ -1,0 +1,20 @@
+﻿<h3>Mascotas</h3>
+
+
+
+
+
+
+
+@code{
+
+    [Parameter]
+    public Mascota mascota { get; set; }
+    [Parameter]
+    public EventCallback<Mascota> mascota_adoptada{ get; set; }
+      public async Task mascotasadoptadas()
+      {
+        await mascota_adoptada.InvokeAsync(mascota);
+      }
+      
+}

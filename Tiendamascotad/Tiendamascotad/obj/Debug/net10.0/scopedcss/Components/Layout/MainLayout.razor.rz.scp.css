@@ -1,0 +1,29 @@
+#blazor-error-ui[b-0264clh1uw] {
+    color-scheme: light only;
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-0264clh1uw] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+    .navegacion[b-0264clh1uw]{
+        display:flex;
+        justify-content:space-around;
+        margin:2% 4%;
+    }
+    .navegacion ul[b-0264clh1uw]{
+
+    }

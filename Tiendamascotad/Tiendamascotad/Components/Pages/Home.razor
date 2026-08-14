@@ -1,0 +1,57 @@
+﻿@page "/"
+
+<PageTitle>Cozypet</PageTitle>
+
+
+
+@foreach (var animal in Lista_mascota) {
+    <Mascotas mascota="@animal" mascota_adoptada="mascotadoptada" />
+}
+
+
+@code{
+
+    Mascota mascotas = new Mascota();
+
+    public List<Mascota> Lista_mascota = new()
+        {
+
+           new Mascota{
+               nombre="Luis",
+               imagen="URL",
+               especie="perro ",
+               edad=2
+               },
+               new Mascota{
+               nombre="mirrah",
+               imagen="URL",
+               especie="Owl ",
+               edad=1
+               },
+               new Mascota{
+               nombre="luna",
+               imagen="URL",
+               especie="cat ",
+               edad=1
+               },
+              new Mascota{
+               nombre="kory",
+               imagen="URL",
+               especie="Parrot ",
+               edad=3
+               },
+               new Mascota{
+               nombre="Andrés",
+               imagen="URL",
+               especie="Python ball ",
+               edad=1
+               }
+         };
+    public void mascotadoptada(Mascota mascotaRecibida)
+    {
+        Lista_mascota.Remove(mascotas);
+    }
+
+
+
+    }

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cxSar5H0tb8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aprendiz\\Downloads\\Tiendamascotad\\Tiendamascotad\\Tiendamascotad\\Tiendamascotad.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.6\\microsoft.aspnetcore.app.internal.assets.10.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
