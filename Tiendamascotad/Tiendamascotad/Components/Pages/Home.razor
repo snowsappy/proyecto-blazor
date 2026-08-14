@@ -4,11 +4,32 @@
 
 
 
-@foreach (var animal in Lista_mascota) {
+
+<div class="hero">
+   
+   <div class="hero-contenido">
+       
+        <div class="parte 1">
+            <h1>Adopt your pet</h1>
+            <p>jdfjdkfdskkbjgjskflkfdjadñloisldjfdkjsdhkfdghnewkdskfdfrskashsfkhfsdkeahfdsjdfdsmjbdsjsfkjdshskaehadkfshdksihcsldflklwafds</p>
+        </div>
+        <div class="parte 2">
+        
+           <img src="" alt="gato" />
+           
+        </div>
+   </div>
+   
+   <img src="#" alt="perro" />
+
+
+
+</div>
+
+@foreach (var animal in Lista_mascota)
+{
     <Mascotas mascota="@animal" mascota_adoptada="mascotadoptada" />
 }
-
-
 @code{
 
     Mascota mascotas = new Mascota();
@@ -52,6 +73,6 @@
         Lista_mascota.Remove(mascotas);
     }
 
-
+        
 
     }
