@@ -29,9 +29,9 @@
         z-index: 1;
     }
 
-/* SOLO EN HOME */
+
 .home-layout .navegacion {
-    animation: aparecerMenu 1s ease 2.5s both;
+    animation: aparecerMenu 1s ease 1s both;
 }
 
 @keyframes aparecerMenu {
@@ -46,8 +46,8 @@
     }
 }
 .adoptadas-layout .navegacion {
-    background-color: #b6b1d9;
-    padding: 1% 2%;
+    background-color: #538fde;
+    padding: 1% 1%;
     border-radius: 50px;
 }
 a{

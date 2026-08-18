@@ -3,7 +3,7 @@ h1[b-7q3s42vrad] {
     text-align: center;
     font-family: "Baloo 2";
     font-size: 3rem;
-    margin: 10% 6% 6% 6%;
+    margin: 13% 6% 4% 6%;
     color: #1f2c4c;
 }
 .fijar[b-7q3s42vrad] {
@@ -18,9 +18,10 @@ h1[b-7q3s42vrad] {
     display: flex;
     flex-direction: row;
     background-color: #f1f7fd;
-    padding: 2%;
-    width: 70%;
-    height: 60vh;
+    padding: 1%;
+    width: 60%;
+    height: 35vh;
+
     border-radius: 20px;
     overflow: hidden;
     justify-content: center;
@@ -37,10 +38,11 @@ h1[b-7q3s42vrad] {
 
 .imagen[b-7q3s42vrad] {
     background-color: aqua;
-    width: 80%;
+    width: 50%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
+  
 }
 
  .imagen img[b-7q3s42vrad] {
@@ -76,19 +78,19 @@ h1[b-7q3s42vrad] {
         font-size: 1.2rem;
         border: 0;
         width: 20vh;
-        padding: 2%;
+        padding: 1%;
         background-color: #b6b1d9;
-        border-radius: 20px;
+        border-radius: 15px;
         color: #30323D;
         cursor: pointer;
         position:absolute;
-        right:4%;
-        bottom:6%;
+        right:1%;
+        bottom:4%;
     
     }
 
 #g[b-7q3s42vrad]{
    font-size:0.9rem;
    position:absolute;
-   top:20%;
+   top:27%;
 }

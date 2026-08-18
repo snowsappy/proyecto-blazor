@@ -78,9 +78,6 @@ C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\De
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\Tiendamascotad.pdb
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\Tiendamascotad.genruntimeconfig.cache
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\ref\Tiendamascotad.dll
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\yhi4e86j1y-{0}-1b2j5dyeud-1b2j5dyeud.gz
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\r10jrjwh1w-{0}-a7i6p6tnnx-a7i6p6tnnx.gz
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\pysvwou6zd-{0}-a7i6p6tnnx-a7i6p6tnnx.gz
 C:\Users\edier\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\edier\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\bin\Debug\net10.0\appsettings.json
 C:\Users\edier\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\bin\Debug\net10.0\Tiendamascotad.staticwebassets.runtime.json
@@ -127,3 +124,9 @@ C:\Users\edier\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug
 C:\Users\edier\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Pages\Mascotadoptada.razor.rz.scp.css
 C:\Users\edier\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\r10jrjwh1w-{0}-5aaxyy26tt-5aaxyy26tt.gz
 C:\Users\edier\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\pysvwou6zd-{0}-5aaxyy26tt-5aaxyy26tt.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Mascotas.razor.rz.scp.css
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Pages\Mascotadoptada.razor.rz.scp.css
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\yhi4e86j1y-{0}-wipiyarsq8-wipiyarsq8.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\r10jrjwh1w-{0}-rwjafwgrzr-rwjafwgrzr.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\pysvwou6zd-{0}-rwjafwgrzr-rwjafwgrzr.gz
