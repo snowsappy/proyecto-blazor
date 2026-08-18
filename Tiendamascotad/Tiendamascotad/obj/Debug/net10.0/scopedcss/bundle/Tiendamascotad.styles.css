@@ -1,39 +1,60 @@
 /* /Components/Layout/MainLayout.razor.rz.scp.css */
-#blazor-error-ui[b-0264clh1uw] {
-    color-scheme: light only;
-    background: lightyellow;
-    bottom: 0;
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+*[b-0264clh1uw] {
     box-sizing: border-box;
-    display: none;
-    left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+    margin: 0;
+    padding: 0;
 }
 
-    #blazor-error-ui .dismiss[b-0264clh1uw] {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
+.navegacion[b-0264clh1uw] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 4%;
+    position: absolute;
+    top: 2%;
+    width: 92%;
+    z-index: 10;
+}
+
+    .navegacion ul[b-0264clh1uw] {
+        list-style: none;
+        display: flex;
+        gap: 60px;
+        font-family: "Quicksand";
+        font-weight: 600;
+        color: #f5f5f5;
     }
 
-    .navegacion[b-0264clh1uw]{
-        display:flex;
-        justify-content:space-between;
-        margin:1% 4%;
-    }
-    .navegacion ul[b-0264clh1uw]{
-        list-style:none;
-        display:flex;
-        gap:60px;
-        font-family:"manjari";
-    }
     .navegacion img[b-0264clh1uw] {
-            width: 5%
-     }
+        width: 7%;
+        z-index: 1;
+    }
+
+/* SOLO EN HOME */
+.home-layout .navegacion[b-0264clh1uw] {
+    animation: aparecerMenu-b-0264clh1uw 1s ease 2.5s both;
+}
+
+@keyframes aparecerMenu-b-0264clh1uw {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.adoptadas-layout .navegacion[b-0264clh1uw] {
+    background-color: #b6b1d9;
+    padding: 1% 2%;
+    border-radius: 50px;
+}
+a[b-0264clh1uw]{
+    text-decoration:none;
+    color:#f5f5f5;
+}
 /* /Components/Layout/ReconnectModal.razor.rz.scp.css */
 .components-reconnect-first-attempt-visible[b-9f3kzz4cb8],
 .components-reconnect-repeated-attempt-visible[b-9f3kzz4cb8],
@@ -192,6 +213,93 @@
         opacity: 0;
     }
 }
+/* /Components/Mascotas.razor.rz.scp.css */
+/* CSS for Mascotas component */
+
+
+
+
+.tarjeta[b-y4ol2jjobw] {
+    padding: 3%;
+    width: 100%;
+    height: 90vh;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #322b4a;
+}
+
+    .tarjeta ul[b-y4ol2jjobw] {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2vh;
+        width: auto;
+       
+        position: absolute;
+        display: flex;
+       
+        top: 7%;
+        left: 5% ;
+      
+        
+    }
+    .tarjeta li[b-y4ol2jjobw] {
+        width: 18vh;
+        padding: 3vh 0;
+        height: 3vh;
+        background-color: #cecbe7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        font-family: "Quicksand";
+        font-weight: 500;
+        color: #4e4270;
+    }
+.contenido[b-y4ol2jjobw] {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+    .contenido img[b-y4ol2jjobw] {
+         width: 100%;
+        height: 100%;
+        object-fit: fill;
+
+        object-position: center;
+    }
+.texto[b-y4ol2jjobw] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+    font-family: "baloo 2";
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+    .texto button[b-y4ol2jjobw] {
+        font-family: "Quicksand";
+        font-weight: 700;
+        font-size: 1.2rem;
+        border: 0;
+        width: 20vh;
+        padding: 2%;
+        background-color: #968cc6;
+        border-radius: 20px;
+        color: #f5f5f5;
+    }
+
 /* /Components/Pages/Home.razor.rz.scp.css */
 /* CSS for Home component */
 *[b-2ro7ndw66d]{
@@ -199,10 +307,206 @@
     margin:0%;
     padding:0%;
 }
-.hero[b-2ro7ndw66d]{
+.hero[b-2ro7ndw66d] {
+    width: 100%;
+    height: 100vh;
+    /*background-image: url('images/gato c.jpg');*/
+    background-color: #1f2c4c;
+}
+.hero-contenido[b-2ro7ndw66d]{
+    display:flex;
+}
+.parte1[b-2ro7ndw66d] {
+    background-color: #74ade6;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    color: #f5f5f5;
+    /*  background-color: #31509c;*/
+    
+    animation: rodar-abajo-b-2ro7ndw66d 2s ease-in;
+}
 
+    .parte1[b-2ro7ndw66d]::before {
+        content: "Your lovely pet is waiting for you";
+        position: absolute;
+        font-family: "fredoka";
+        font-size: 5rem;
+        font-weight: 700;
+        top: 35%;
+        text-align: start;
+        letter-spacing: 0.1%;
+        line-height: 1;
+        animation: cargar-texto-b-2ro7ndw66d 4s ease-in;
+        padding-left:4%;
+        
+    }
+    .parte1[b-2ro7ndw66d]::after {
+        content: "When you adopt, you are not only gaining a loyal friend—you are also giving an animal the opportunity to live a better life.";
+        position: absolute;
+        top: 65%;
+        margin: 0% 6%;
+        font-size: 1.5rem;
+        font-family: "manjari";
+        font-weight:200;
+        line-height:1;
+        text-align:justify;
+        animation:cargar-texto-b-2ro7ndw66d 4.5s ease-in-out;
+    }
+.parte1 p[b-2ro7ndw66d]{
+    font-family:"baloo 2";
+}
+.parte2[b-2ro7ndw66d] {
+    width: 50%;
+    background-color: brown;
+    height: 100vh;
+    overflow: hidden;
+    animation: rodar-arriba-b-2ro7ndw66d 2s ease-in;
+}
+
+@keyframes rodar-abajo-b-2ro7ndw66d {
+    0%{
+        transform:translateY(-50vw);
+
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+}
+@keyframes cargar-texto-b-2ro7ndw66d {
+
+    0% {
+        opacity:0;
+        transform:translateY(5vh);
+    }
+    50%{
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+                        }
+@keyframes rodar-arriba-b-2ro7ndw66d {
+    0% {
+        transform: translateY(50vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.parte2 img[b-2ro7ndw66d]{
     width:100%;
     height:100vh;
-    background-color:aqua;
+    object-fit:cover;
+    object-position:right;
+}
 
+.tarjetas[b-2ro7ndw66d] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 5% 7%;
+    width: 86%;
+    margin: 5% auto;
+    justify-content: center;
+    align-content: center;
+}
+/* /Components/Pages/Mascotadoptada.razor.rz.scp.css */
+/* CSS for Mascotadoptada component */
+h1[b-7q3s42vrad] {
+    text-align: center;
+    font-family: "Baloo 2";
+    font-size: 3rem;
+    margin: 10% 6% 6% 6%;
+    color: #1f2c4c;
+}
+.fijar[b-7q3s42vrad] {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin: 5%;
+    gap:25px
+}
+.perfil[b-7q3s42vrad] {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f7fd;
+    padding: 2%;
+    width: 70%;
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #1f2c4c;
+}
+
+.texto p[b-7q3s42vrad] {
+    
+        font-family: "Quicksand";
+        font-weight: 500;
+}
+
+.imagen[b-7q3s42vrad] {
+    background-color: aqua;
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+ .imagen img[b-7q3s42vrad] {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: center;
+ }
+ .texto h3[b-7q3s42vrad]{
+     line-height:1;
+ }
+
+.texto[b-7q3s42vrad] {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    width: 100%;
+    gap:20px;
+    padding:2%;
+    font-family: "baloo 2";
+    font-weight: 200;
+    font-size: 2rem;
+    
+}
+
+.texto p[b-7q3s42vrad]{
+    font-size:1.2rem;
+    bottom:100%;
+}
+    .texto button[b-7q3s42vrad] {
+        font-family: "Quicksand";
+        font-weight: 700;
+        font-size: 1.2rem;
+        border: 0;
+        width: 20vh;
+        padding: 2%;
+        background-color: #b6b1d9;
+        border-radius: 20px;
+        color: #30323D;
+        cursor: pointer;
+        position:absolute;
+        right:4%;
+        bottom:6%;
+    
+    }
+
+#g[b-7q3s42vrad]{
+   font-size:0.9rem;
+   position:absolute;
+   top:20%;
 }

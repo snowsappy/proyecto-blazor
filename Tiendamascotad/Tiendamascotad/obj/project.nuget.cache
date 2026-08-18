@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uBMnzSC0GE4=",
+  "dgSpecHash": "reSCG1eo0AY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Tiendamascotad.csproj",
+  "projectFilePath": "C:\\Users\\edier\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Tiendamascotad.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.10\\microsoft.aspnetcore.app.internal.assets.10.0.10.nupkg.sha512"
+    "C:\\Users\\edier\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.11\\microsoft.aspnetcore.app.internal.assets.10.0.11.nupkg.sha512"
   ],
   "logs": []
 }

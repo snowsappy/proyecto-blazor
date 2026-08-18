@@ -1,9 +1,22 @@
-﻿<h3>Mascotas</h3>
+﻿
 
+<article class="tarjeta">
+    <div class="contenido">
+        <img src="@mascota.imagen" />
+    </div>
+    <ul>
+        <li>@mascota.especie</li>
+        <li>@mascota.nombre</li>
+        <li>@mascota.edad years</li>
+    </ul>
+    <div class="texto">
+        <h5>@mascota.nombre</h5>
+        <button class="boton" @onclick="mascotasadoptadas">Adoptar</button>
 
-
-
-
+    </div>
+   
+   
+</article>
 
 
 @code{

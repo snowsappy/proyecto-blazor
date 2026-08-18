@@ -1,0 +1,38 @@
+﻿@inject Mascotasadoptadaslista mascotasadoptadaslista
+@rendermode InteractiveServer
+
+@page "/adoptadas"
+
+<PageTitle>My contributions</PageTitle>
+
+<h1>My new friends</h1>
+
+<div class="fijar">
+
+    @foreach (var mascota in mascotasadoptadaslista.lista_adoptadas)
+    {
+       <article class="perfil">
+			<div class="imagen">
+                <img src="@mascota.imagen" />
+            </div>
+           <div class="texto">
+            <p id="g">Thank you for helping us</p>
+            <h3> your friend name is: @mascota.nombre</h3>
+             <div class="botones">
+                <p>is a beatiful @mascota.especie looking forward to stay with you</p>
+                <p>along this @mascota.edad years alive</p>
+             </div>
+             <button>See info</button>
+           </div>
+
+       </article>
+ 
+    }
+</div>
+
+
+@code {
+    
+    //uso inject por que el new no me sirve
+
+}

@@ -1,0 +1,94 @@
+/* CSS for Mascotadoptada component */
+h1[b-7q3s42vrad] {
+    text-align: center;
+    font-family: "Baloo 2";
+    font-size: 3rem;
+    margin: 10% 6% 6% 6%;
+    color: #1f2c4c;
+}
+.fijar[b-7q3s42vrad] {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin: 5%;
+    gap:25px
+}
+.perfil[b-7q3s42vrad] {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f7fd;
+    padding: 2%;
+    width: 70%;
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #1f2c4c;
+}
+
+.texto p[b-7q3s42vrad] {
+    
+        font-family: "Quicksand";
+        font-weight: 500;
+}
+
+.imagen[b-7q3s42vrad] {
+    background-color: aqua;
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+ .imagen img[b-7q3s42vrad] {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: center;
+ }
+ .texto h3[b-7q3s42vrad]{
+     line-height:1;
+ }
+
+.texto[b-7q3s42vrad] {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    width: 100%;
+    gap:20px;
+    padding:2%;
+    font-family: "baloo 2";
+    font-weight: 200;
+    font-size: 2rem;
+    
+}
+
+.texto p[b-7q3s42vrad]{
+    font-size:1.2rem;
+    bottom:100%;
+}
+    .texto button[b-7q3s42vrad] {
+        font-family: "Quicksand";
+        font-weight: 700;
+        font-size: 1.2rem;
+        border: 0;
+        width: 20vh;
+        padding: 2%;
+        background-color: #b6b1d9;
+        border-radius: 20px;
+        color: #30323D;
+        cursor: pointer;
+        position:absolute;
+        right:4%;
+        bottom:6%;
+    
+    }
+
+#g[b-7q3s42vrad]{
+   font-size:0.9rem;
+   position:absolute;
+   top:20%;
+}

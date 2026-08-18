@@ -1,5 +1,6 @@
 ﻿@page "/"
-
+@rendermode InteractiveServer
+@inject  Mascotasadoptadaslista mascotasadoptadaslista
 <PageTitle>Cozypet</PageTitle>
 
 
@@ -9,29 +10,33 @@
    
    <div class="hero-contenido">
        
-        <div class="parte 1">
-            <h1>Adopt your pet</h1>
-            <p>jdfjdkfdskkbjgjskflkfdjadñloisldjfdkjsdhkfdghnewkdskfdfrskashsfkhfsdkeahfdsjdfdsmjbdsjsfkjdshskaehadkfshdksihcsldflklwafds</p>
+        <div class="parte1">
+            
         </div>
-        <div class="parte 2">
-        
-           <img src="" alt="gato" />
+       
            
+            
+        <div class="parte2">
+		
+			
+           <img src="/images/gato c.jpg" />
         </div>
+        
    </div>
    
-   <img src="#" alt="perro" />
 
 
 
 </div>
-
-@foreach (var animal in Lista_mascota)
-{
-    <Mascotas mascota="@animal" mascota_adoptada="mascotadoptada" />
-}
+<div class="tarjetas">
+    @foreach (var animal in Lista_mascota)
+    {
+        <Mascotas mascota="@animal" mascota_adoptada="mascotadoptada" />
+      
+    }
+</div>
 @code{
-
+    public int indice;
     Mascota mascotas = new Mascota();
 
     public List<Mascota> Lista_mascota = new()
@@ -39,40 +44,45 @@
 
            new Mascota{
                nombre="Luis",
-               imagen="URL",
-               especie="perro ",
+               imagen="/images/ragdoll 2.jpg",
+               especie="ragdoll cat",
                edad=2
                },
                new Mascota{
                nombre="mirrah",
-               imagen="URL",
-               especie="Owl ",
+               imagen="/images/owl.jpg",
+               especie="Owl",
                edad=1
                },
                new Mascota{
                nombre="luna",
-               imagen="URL",
-               especie="cat ",
+               imagen="/images/9297190.jpg",
+               especie="cat",
                edad=1
                },
               new Mascota{
                nombre="kory",
-               imagen="URL",
-               especie="Parrot ",
+               imagen="/images/parrot.jpg",
+               especie="Parrot",
                edad=3
                },
                new Mascota{
                nombre="Andrés",
-               imagen="URL",
-               especie="Python ball ",
+               imagen="/images/python.jpg",
+               especie="Python ball",
                edad=1
                }
          };
+    
+  
     public void mascotadoptada(Mascota mascotaRecibida)
     {
-        Lista_mascota.Remove(mascotas);
+        Lista_mascota.Remove(mascotaRecibida);
+        mascotasadoptadaslista.lista_adoptadas.Add(mascotaRecibida);
+        Console.WriteLine(mascotasadoptadaslista.lista_adoptadas.Count);
     }
 
-        
+    
 
     }
+
