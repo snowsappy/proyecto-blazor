@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddScoped<Mascotasadoptadaslista>();
+builder.Services.AddScoped<Mascota>();
 
 var app = builder.Build();
 

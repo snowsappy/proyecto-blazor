@@ -1,0 +1,38 @@
+﻿@page "/contact us"
+@rendermode InteractiveServer
+
+
+<EditForm Model="persona" OnValidSubmit="agregarpersona"  >
+    <DataAnnotationsValidator />
+    <label>name</label>
+    <InputText @bind-Value="persona.Name"></InputText>
+    <label>number</label>
+    <InputNumber @bind-Value="persona.numero"></InputNumber>
+    <label>gmail</label>
+      <InputText @bind-Value="persona.gmail"></InputText>
+    <ValidationMessage For="() => persona.gmail" />
+    <label>mensaje</label>
+    <InputTextArea @bind-Value="persona.mensaje"></InputTextArea>
+    <button type="submit">send</button>
+   
+</EditForm>
+@foreach(var item in lista)
+{
+    <p>@item.Name</p>
+    <p>@item.gmail</p>
+    <p>@item.numero</p>
+    <p>@item.mensaje</p>
+}
+
+@code{
+    Persona persona = new();
+
+    List<Persona> lista = new List<Persona>();
+
+    void agregarpersona()
+    {
+        lista.Add(persona);
+        persona = new();
+    }
+   
+}
