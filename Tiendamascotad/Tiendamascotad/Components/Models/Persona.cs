@@ -8,7 +8,7 @@ namespace Tiendamascotad.Components.Models
         [StringLength(50,MinimumLength =8)]
         public string? Name { get; set; }
         [Required]
-        [Phone]
+        
         public int numero { get; set; }
         [Required]
         [EmailAddress(ErrorMessage ="correo invalido")]

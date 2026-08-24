@@ -65,8 +65,6 @@ C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\De
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\bundle\Tiendamascotad.styles.css
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\projectbundle\Tiendamascotad.bundle.scp.css
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\7eqs1f9jzb-{0}-abdmv1u4y3-abdmv1u4y3.gz
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\z4pw25l7m5-{0}-f7fxoh55ae-f7fxoh55ae.gz
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\3bg9pin55u-{0}-68qhiysw0j-68qhiysw0j.gz
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\staticwebassets.development.json
@@ -129,5 +127,7 @@ C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\De
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Pages\Mascotadoptada.razor.rz.scp.css
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\yhi4e86j1y-{0}-wipiyarsq8-wipiyarsq8.gz
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Pages\Contactanos.razor.rz.scp.css
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\r10jrjwh1w-{0}-50dfbq1pd0-50dfbq1pd0.gz
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\pysvwou6zd-{0}-50dfbq1pd0-50dfbq1pd0.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\z4pw25l7m5-{0}-qcnkhbt5lj-qcnkhbt5lj.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\3bg9pin55u-{0}-12rnbzdyyc-12rnbzdyyc.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\r10jrjwh1w-{0}-4t52uhdwos-4t52uhdwos.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\pysvwou6zd-{0}-4t52uhdwos-4t52uhdwos.gz
