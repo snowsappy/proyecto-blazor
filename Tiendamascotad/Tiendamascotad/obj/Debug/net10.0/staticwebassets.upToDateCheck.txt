@@ -15,9 +15,9 @@ wwwroot\images\python 2.jpg
 wwwroot\images\python.jpg
 wwwroot\images\ragdoll 2.jpg
 Components\Layout\ReconnectModal.razor.js
-C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.6\build\..\_framework\blazor.web.js
-C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.6\build\..\_framework\blazor.server.js
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\wwwroot\app.css
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\Components\Layout\ReconnectModal.razor.js
-C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.6\_framework\blazor.web.js
-C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.6\_framework\blazor.server.js
+C:\Users\sulei\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.11\build\..\_framework\blazor.web.js
+C:\Users\sulei\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.11\build\..\_framework\blazor.server.js
+C:\Users\sulei\OneDrive\Documentos\proyecto-blazor\Tiendamascotad\Tiendamascotad\wwwroot\app.css
+C:\Users\sulei\OneDrive\Documentos\proyecto-blazor\Tiendamascotad\Tiendamascotad\Components\Layout\ReconnectModal.razor.js
+C:\Users\sulei\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.11\_framework\blazor.web.js
+C:\Users\sulei\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.11\_framework\blazor.server.js

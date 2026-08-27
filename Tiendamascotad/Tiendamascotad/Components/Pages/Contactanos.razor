@@ -12,11 +12,13 @@
         <div class="campo">
             <label>Nombre</label>
             <InputText @bind-Value="persona.Name" />
+            <ValidationMessage For="@(() => persona.Name)" />
         </div>
 
         <div class="campo">
             <label>Número</label>
             <InputNumber @bind-Value="persona.numero" />
+            <ValidationMessage For="@(() => persona.numero)" />
         </div>
 
         <div class="campo">
@@ -28,6 +30,7 @@
         <div class="campo">
             <label>Mensaje</label>
             <InputTextArea @bind-Value="persona.mensaje" />
+            <ValidationMessage For="@(() => persona.mensaje)" />
         </div>
 
         <button type="submit">Enviar</button>
@@ -35,7 +38,6 @@
     </EditForm>
 
 </div>
-
 
 @foreach (var item in lista)
 {
@@ -51,12 +53,11 @@
 {
     Persona persona = new();
 
-    List<Persona> lista = new List<Persona>();
+    List<Persona> lista = new();
 
     void agregarpersona()
     {
         lista.Add(persona);
         persona = new();
     }
-}
 }
