@@ -101,17 +101,17 @@ app.MapPatch("/users/{id}", async (int id, User datos, zozo_context context) =>
 
     if (datos.firstname != null)
     {
-        usuario.Nombre = datos.Nombre;
+        usuario.firstname = datos.firstname;
     }
 
-    if (datos.Telefono != null)
+    if (datos.phone != null)
     {
-        usuario.Telefono = datos.Telefono;
+        usuario.phone = datos.phone;
     }
 
-    if (datos.Email != null)
+    if (datos.email != null)
     {
-        usuario.Email = datos.Email;
+        usuario.email = datos.email;
     }
 
     await context.SaveChangesAsync();
