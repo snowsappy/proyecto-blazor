@@ -104,7 +104,6 @@ button[b-v4oik8hhx6] {
         -moz-appearance: textfield;
     }
 
-        /* Chrome, Edge, Safari */
         .campo[b-v4oik8hhx6]  input[type="number"]::-webkit-inner-spin-button,
         .campo[b-v4oik8hhx6]  input[type="number"]::-webkit-outer-spin-button {
             -webkit-appearance: none;

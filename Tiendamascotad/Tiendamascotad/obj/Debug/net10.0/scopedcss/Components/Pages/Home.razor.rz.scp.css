@@ -23,7 +23,12 @@
     
     animation: rodar-abajo-b-2ro7ndw66d 1s ease-in;
 }
+#title[b-2ro7ndw66d] {
 
+    text-align:center;
+    font-family:"baloo 2";
+    color:#3b3838;
+}
     .parte1[b-2ro7ndw66d]::before {
         content: "Your lovely pet is waiting for you";
         position: absolute;
@@ -35,7 +40,7 @@
         text-align: start;
         letter-spacing: 0.1%;
         line-height: 1;
-        animation: cargar-texto-b-2ro7ndw66d 3s ease-in;
+        animation: cargar-texto-b-2ro7ndw66d 2s ease-in;
         margin:3%;
         
     }
@@ -49,7 +54,7 @@
         font-weight:200;
         line-height:1;
         text-align:start;
-        animation:cargar-texto-b-2ro7ndw66d 2s ease-in;
+        animation:cargar-texto-b-2ro7ndw66d 2.5s ease-in;
     }
 .parte1 p[b-2ro7ndw66d]{
     font-family:"baloo 2";
