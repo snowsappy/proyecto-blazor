@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-builder.Services.AddScoped<Mascotasadoptadaslista>();
+
 builder.Services.AddScoped<Mascota>();
 builder.Services.AddScoped<Zozo_services>();
 builder.Services.AddHttpClient();

@@ -12,7 +12,7 @@
     <div class="texto">
         <h5>@mascota.name</h5>
         <p>@mascota.breed</p>
-        <button class="boton">Adopt </button>
+        <button class="boton"><a href="/card">Adopt</a> </button>
 
     </div>
    
@@ -26,5 +26,9 @@
     public Mascota mascota { get; set; }
     [Parameter]
     public EventCallback<Mascota> mascota_adoptada{ get; set; }
-     
+
+    public async Task info()
+    {
+        await mascota_adoptada.InvokeAsync(mascota);
+    }
 }

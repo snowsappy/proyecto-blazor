@@ -1,6 +1,6 @@
 ﻿@page "/"
+
 @rendermode InteractiveServer
-@inject  Mascotasadoptadaslista mascotasadoptadaslista
 <PageTitle>Cozypet</PageTitle>
 @inject Zozo_services zozo_Services
 
@@ -28,7 +28,8 @@
 </div>
 <h1 id="title">Our litte pets are waiting for you</h1>
 <div class="tarjetas">
-   
+ 
+<button><a href="/card">descripcion de la mascota</a></button>
 
 @foreach(var item in mascotas)
 {
@@ -41,6 +42,7 @@
     
     public int indice;
     List<Mascota> mascotas=new();
+    
     /*
     public List<Mascota> Lista_mascota = new()
         {
@@ -78,11 +80,12 @@
                }
          };
     */
-    protected override async Task OnInitializedAsync()
+  /*  protected override async Task OnInitializedAsync()
     {
         mascotas = await zozo_Services.obtenermascotas();
     }
-
+    *
+    */
 
     }
 

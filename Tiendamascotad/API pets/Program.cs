@@ -17,7 +17,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-app.MapGet("/users", async (zozo_context context) =>
+/*app.MapGet("/users", async (zozo_context context) =>
 {
     return await context.users.ToListAsync();
 });
@@ -32,7 +32,7 @@ app.MapGet("/request", async (zozo_context context) =>
     return await context.request_Adoptions.ToListAsync();
 });
 
-
+*/
 
 
 
