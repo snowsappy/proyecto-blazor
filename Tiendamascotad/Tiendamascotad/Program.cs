@@ -9,7 +9,12 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddScoped<Mascotasadoptadaslista>();
 builder.Services.AddScoped<Mascota>();
-
+builder.Services.AddScoped<Zozo_services>();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<Zozo_services>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:7268");
+});
 var app = builder.Build();
 
 

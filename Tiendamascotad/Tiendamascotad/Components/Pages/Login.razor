@@ -1,0 +1,74 @@
+﻿@page "/contact us"
+@rendermode InteractiveServer
+@inject Zozo_services zozo_Services
+
+    <h2>Contáctanos</h2>
+<div class="formulario-contenedor">
+    <EditForm Model="persona" OnValidSubmit="registrar">
+
+        <DataAnnotationsValidator  />
+
+        <div class="campo">
+            <label>firstname</label>
+            <InputText @bind-Value="persona.firstname" />
+            <ValidationMessage For="@(() => persona.firstname)" />
+        </div>
+        <div class="campo">
+            <label>lastname</label>
+            <InputText @bind-Value="persona.lastname" />
+            <ValidationMessage For="@(() => persona.lastname)" />
+        </div>
+        <div class="campo">
+            <label>phone number</label>
+            <InputText @bind-Value="persona.phone" />
+            <ValidationMessage For="@(() => persona.phone)" />
+        </div>
+    <div class="campo">
+        <label>adress</label>
+        <InputText @bind-Value="persona.adress" />
+        <ValidationMessage For="@(() => persona.adress)" />
+    </div>
+        <div class="campo">
+            <label>email</label>
+            <InputText @bind-Value="persona.email" />
+            <ValidationMessage For="@(() => persona.email)" />
+        </div>
+        <div class="campo">
+            <label>password</label>
+            <InputText type="password" @bind-Value="persona.password" />
+            <ValidationMessage For="@(() => persona.password)" />
+        </div>
+       
+
+        <button type="submit">Enviar</button>
+
+    </EditForm>
+
+</div>
+
+´<p>@mensaje</p>
+@code
+{
+    List<Persona> usuario = new();
+    Persona persona = new();
+    string mensaje;
+
+    public async Task registrar()
+    {
+        bool resultado = await zozo_Services.RegistrarPersona(persona);
+        persona.rol = 1;
+        if (resultado)
+        {
+            mensaje = "User registered successfully";
+        }
+        else
+        {
+            mensaje = "There was an error registering the user";
+        }
+        await zozo_Services.RegistrarPersona(persona);
+
+        persona = new();
+    }
+    
+
+}

@@ -6,11 +6,11 @@ namespace Tiendamascotad.Components.Models
     {
         [Key]
 
-        int id_adoption { get; set; }
-        int id_user { get; set; }
-        int id_pet { get; set; }
-        DateOnly date_request { get; set; }
-        bool adoption_state { get; set; }
-        string reason { get; set; }
+        public int id_adoption { get; set; }
+        public int id_user { get; set; }
+        public int id_pet { get; set; }
+        public DateOnly date_request { get; set; }
+        public bool adoption_state { get; set; }
+        public string reason { get; set; }
     }
 }

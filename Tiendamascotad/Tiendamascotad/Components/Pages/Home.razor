@@ -25,19 +25,26 @@
    </div>
    
 
-
-
 </div>
 <h1 id="title">Our litte pets are waiting for you</h1>
 <div class="tarjetas">
-  
+   
+
+@foreach(var item in mascotas)
+{
+    
+     <Mascotas mascota="item"></Mascotas>
+
+}
 </div>
 @code{
+    
     public int indice;
-    List<Mascota> mascotas;
+    List<Mascota> mascotas=new();
     /*
     public List<Mascota> Lista_mascota = new()
         {
+
 
            new Mascota{
                nombre="Luis",

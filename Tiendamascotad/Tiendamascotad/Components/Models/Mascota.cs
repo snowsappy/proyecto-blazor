@@ -5,13 +5,13 @@ namespace Tiendamascotad.Components.Models
     public class Mascota
     {
         [Key]
-        int id { get; set; }
-        string name { get; set; }
-        string specie { get; set; }
-        string breed { get; set; }
-        DateOnly birthdate { get; set; }
-        string description { get; set; }
-        string image { get; set; }
-        bool state { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public string specie { get; set; }
+        public string breed { get; set; }
+        public DateOnly birthdate { get; set; }
+        public string description { get; set; }
+        public string image { get; set; }
+        public bool state { get; set; }
     }
 };

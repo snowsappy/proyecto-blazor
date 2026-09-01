@@ -2,16 +2,17 @@
 
 <article class="tarjeta">
     <div class="contenido">
-        <img src="@mascota.imagen" />
+        <img src=@mascota.image />
     </div>
     <ul>
-        <li>@mascota.especie</li>
-        <li>@mascota.nombre</li>
-        <li>@mascota.edad years</li>
+        <li>@mascota.birthdate</li>
+        <li>@mascota.specie</li>
+       
     </ul>
     <div class="texto">
-        <h5>@mascota.nombre</h5>
-        <button class="boton" @onclick="mascotasadoptadas">Adoptar</button>
+        <h5>@mascota.name</h5>
+        <p>@mascota.breed</p>
+        <button class="boton">Adopt </button>
 
     </div>
    
@@ -25,9 +26,5 @@
     public Mascota mascota { get; set; }
     [Parameter]
     public EventCallback<Mascota> mascota_adoptada{ get; set; }
-      public async Task mascotasadoptadas()
-      {
-        await mascota_adoptada.InvokeAsync(mascota);
-      }
-      
+     
 }

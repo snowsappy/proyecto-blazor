@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tiendamascotad")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9c3a4a1740a9c00b24d3dc642dc454c805f9026")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da3fd6b245b54eca23f461512d2f9371191882df")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tiendamascotad")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tiendamascotad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

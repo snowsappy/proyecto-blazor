@@ -37,12 +37,13 @@ app.MapGet("/request", async (zozo_context context) =>
 
 
 //repasar a profundidad esto
-app.MapPost("/users", async (User nuevoUsuario, zozo_context context) =>
+app.MapPost("/users/registrar", async (User nuevoUsuario, zozo_context context) =>
 {
     context.users.Add(nuevoUsuario);
     await context.SaveChangesAsync();
 
-    return nuevoUsuario;
+    
+    return Results.Ok("User registered successfully");
 });
 app.MapDelete("/users/{id}", async (int id, zozo_context context) =>
 {
@@ -59,7 +60,7 @@ app.MapDelete("/users/{id}", async (int id, zozo_context context) =>
     return Results.Ok();
 });
 //repasar a profundidad esto
-app.MapPost("/pets", async (Pet newpet, zozo_context context) =>
+app.MapPost("/pets/registrar", async (Pet newpet, zozo_context context) =>
 {
     context.pets.Add(newpet);
     await context.SaveChangesAsync();
@@ -81,7 +82,13 @@ app.MapDelete("/pets/{id}", async (int id, zozo_context context) =>
     return Results.Ok();
 });
 
+app.MapPut("pets/actualizar", async (int id, Pet datos, zozo_context context) =>
+{
+    context.pets.Update(datos);
+    await context.SaveChangesAsync();
 
+    return context;
+});
 app.MapPost("/request", async (Request_adoption request, zozo_context context) =>
 {
     context.request_Adoptions.Add(request);
@@ -89,7 +96,7 @@ app.MapPost("/request", async (Request_adoption request, zozo_context context) =
 
     return request;
 });
-
+//estudiar la diferencia de patch y put
 app.MapPatch("/users/{id}", async (int id, User datos, zozo_context context) =>
 {
     var usuario = await context.users.FindAsync(id);

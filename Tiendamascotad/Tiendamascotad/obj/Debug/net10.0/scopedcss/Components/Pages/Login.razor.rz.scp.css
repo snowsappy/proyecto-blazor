@@ -1,6 +1,6 @@
 /* CSS for Contactanos component */
 
-body[b-v4oik8hhx6] {
+body[b-r2zx9ov90y] {
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -11,7 +11,7 @@ body[b-v4oik8hhx6] {
     
 }
 
-.formulario-contenedor[b-v4oik8hhx6] {
+.formulario-contenedor[b-r2zx9ov90y] {
     width: 100%;
     max-width: 500px;
     margin: 40px auto;
@@ -22,7 +22,7 @@ body[b-v4oik8hhx6] {
 
 }
 
-    .formulario-contenedor h2[b-v4oik8hhx6] {
+    .formulario-contenedor h2[b-r2zx9ov90y] {
         font-family: "manjari";
         font-size: 6vh;
         font-weight: 700;
@@ -30,22 +30,22 @@ body[b-v4oik8hhx6] {
         text-align:center;
     }
 
-.campo[b-v4oik8hhx6] {
+.campo[b-r2zx9ov90y] {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
     
 }
 
-    .campo label[b-v4oik8hhx6] {
+    .campo label[b-r2zx9ov90y] {
         font-family: "manjari";
         color: #605555;
         font-size: 18px;
         font-weight: 400;
     }
 
-    .campo input[b-v4oik8hhx6],
-    .campo textarea[b-v4oik8hhx6] {
+    .campo input[b-r2zx9ov90y],
+    .campo textarea[b-r2zx9ov90y] {
         width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
@@ -54,18 +54,18 @@ body[b-v4oik8hhx6] {
         box-sizing: border-box;
     }
 
-    .campo textarea[b-v4oik8hhx6] {
+    .campo textarea[b-r2zx9ov90y] {
         min-height: 120px;
         resize: vertical;
     }
 
-        .campo input:focus[b-v4oik8hhx6],
-        .campo textarea:focus[b-v4oik8hhx6] {
+        .campo input:focus[b-r2zx9ov90y],
+        .campo textarea:focus[b-r2zx9ov90y] {
             outline: none;
             border-color: #6c63ff;
         }
 
-button[b-v4oik8hhx6] {
+button[b-r2zx9ov90y] {
     padding: 12px 195px 12px 195px;
     background-color: #E36A73;
     border-radius: 10px;
@@ -75,11 +75,11 @@ button[b-v4oik8hhx6] {
     border:none;
 }
 
-    button:hover[b-v4oik8hhx6] {
+    button:hover[b-r2zx9ov90y] {
         opacity: 0.85;
     }
 
-.persona[b-v4oik8hhx6] {
+.persona[b-r2zx9ov90y] {
     width: 100%;
     max-width: 500px;
     margin: 20px auto;
@@ -88,10 +88,10 @@ button[b-v4oik8hhx6] {
     border-radius: 12px;
 }
 
-    .persona p[b-v4oik8hhx6] {
+    .persona p[b-r2zx9ov90y] {
         margin: 8px 0;
     }
-.campo[b-v4oik8hhx6]  input, .campo[b-v4oik8hhx6]  textarea{
+.campo[b-r2zx9ov90y]  input, .campo[b-r2zx9ov90y]  textarea{
     background: transparent;
     border: 1px solid;
     color: #605656;
@@ -99,13 +99,13 @@ button[b-v4oik8hhx6] {
     border-radius: 10px;
     height: 4.9vh;
 }
-    .campo[b-v4oik8hhx6]  input[type="number"] {
+    .campo[b-r2zx9ov90y]  input[type="number"] {
         appearance: textfield;
         -moz-appearance: textfield;
     }
 
-        .campo[b-v4oik8hhx6]  input[type="number"]::-webkit-inner-spin-button,
-        .campo[b-v4oik8hhx6]  input[type="number"]::-webkit-outer-spin-button {
+        .campo[b-r2zx9ov90y]  input[type="number"]::-webkit-inner-spin-button,
+        .campo[b-r2zx9ov90y]  input[type="number"]::-webkit-outer-spin-button {
             -webkit-appearance: none;
             margin: 0;
         }

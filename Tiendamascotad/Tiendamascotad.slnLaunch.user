@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "API pets\\API pets.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Tiendamascotad\\Tiendamascotad.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

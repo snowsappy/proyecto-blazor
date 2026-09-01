@@ -1,0 +1,688 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "API pets | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:7268"
+    },
+    {
+      "url": "http://localhost:5141"
+    }
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": [
+          "API pets"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pets": {
+      "get": {
+        "tags": [
+          "API pets"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pet"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/request": {
+      "get": {
+        "tags": [
+          "API pets"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Request_adoption"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "API pets"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request_adoption"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Request_adoption"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/registrar": {
+      "post": {
+        "tags": [
+          "API pets"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/users/{id}": {
+      "delete": {
+        "tags": [
+          "API pets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "API pets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/pets/registrar": {
+      "post": {
+        "tags": [
+          "API pets"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pet"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pets/{id}": {
+      "delete": {
+        "tags": [
+          "API pets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/pets/actualizar": {
+      "put": {
+        "tags": [
+          "API pets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pet"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/zozo_context"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AutoTransactionBehavior": {
+        "type": "integer"
+      },
+      "CascadeTiming": {
+        "type": "integer"
+      },
+      "ChangeTracker": {
+        "required": [
+          "context"
+        ],
+        "type": "object",
+        "properties": {
+          "autoDetectChangesEnabled": {
+            "type": "boolean"
+          },
+          "lazyLoadingEnabled": {
+            "type": "boolean"
+          },
+          "queryTrackingBehavior": {
+            "$ref": "#/components/schemas/QueryTrackingBehavior"
+          },
+          "deleteOrphansTiming": {
+            "$ref": "#/components/schemas/CascadeTiming"
+          },
+          "cascadeDeleteTiming": {
+            "$ref": "#/components/schemas/CascadeTiming"
+          },
+          "context": {
+            "$ref": "#/components/schemas/DbContext"
+          },
+          "debugView": {
+            "$ref": "#/components/schemas/DebugView"
+          }
+        }
+      },
+      "DatabaseFacade": {
+        "type": "object",
+        "properties": {
+          "currentTransaction": {
+            "$ref": "#/components/schemas/IDbContextTransaction"
+          },
+          "autoTransactionsEnabled": {
+            "type": "boolean"
+          },
+          "autoTransactionBehavior": {
+            "$ref": "#/components/schemas/AutoTransactionBehavior"
+          },
+          "autoSavepointsEnabled": {
+            "type": "boolean"
+          },
+          "providerName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "DbContext": {
+        "type": "object",
+        "properties": {
+          "database": {
+            "$ref": "#/components/schemas/DatabaseFacade"
+          },
+          "changeTracker": {
+            "$ref": "#/components/schemas/ChangeTracker"
+          },
+          "model": {
+            "$ref": "#/components/schemas/IModel"
+          },
+          "contextId": {
+            "$ref": "#/components/schemas/DbContextId"
+          }
+        }
+      },
+      "DbContextId": {
+        "type": "object",
+        "properties": {
+          "instanceId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "lease": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          }
+        }
+      },
+      "DebugView": {
+        "type": "object",
+        "properties": {
+          "longView": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "shortView": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "IConstructorBindingFactory": {
+        "type": "object"
+      },
+      "IDbContextTransaction": {
+        "type": "object",
+        "properties": {
+          "transactionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "supportsSavepoints": {
+            "type": "boolean"
+          }
+        }
+      },
+      "IModel": {
+        "type": "object",
+        "properties": {
+          "modelDependencies": {
+            "$ref": "#/components/schemas/RuntimeModelDependencies"
+          },
+          "modelId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        }
+      },
+      "IParameterBindingFactories": {
+        "type": "object"
+      },
+      "ITypeMappingSource": {
+        "type": "object"
+      },
+      "Pet": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "specie": {
+            "type": "string"
+          },
+          "breed": {
+            "type": "string"
+          },
+          "birthdate": {
+            "type": "string",
+            "format": "date"
+          },
+          "description": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "state": {
+            "type": "boolean"
+          }
+        }
+      },
+      "QueryTrackingBehavior": {
+        "type": "integer"
+      },
+      "Request_adoption": {
+        "type": "object",
+        "properties": {
+          "id_adoption": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "id_user": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "id_pet": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "date_request": {
+            "type": "string",
+            "format": "date"
+          },
+          "adoption_state": {
+            "type": "boolean"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      },
+      "RuntimeModelDependencies": {
+        "required": [
+          "typeMappingSource",
+          "constructorBindingFactory",
+          "parameterBindingFactories"
+        ],
+        "type": "object",
+        "properties": {
+          "typeMappingSource": {
+            "$ref": "#/components/schemas/ITypeMappingSource"
+          },
+          "constructorBindingFactory": {
+            "$ref": "#/components/schemas/IConstructorBindingFactory"
+          },
+          "parameterBindingFactories": {
+            "$ref": "#/components/schemas/IParameterBindingFactories"
+          }
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id_user": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "adress": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "rol": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          }
+        }
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "temperatureF": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "summary": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "zozo_context": {
+        "type": "object",
+        "properties": {
+          "pets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pet"
+            }
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          "request_Adoptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Request_adoption"
+            }
+          },
+          "database": {
+            "$ref": "#/components/schemas/DatabaseFacade"
+          },
+          "changeTracker": {
+            "$ref": "#/components/schemas/ChangeTracker"
+          },
+          "model": {
+            "$ref": "#/components/schemas/IModel"
+          },
+          "contextId": {
+            "$ref": "#/components/schemas/DbContextId"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "API pets"
+    },
+    {
+      "name": "WeatherForecast"
+    }
+  ]
+}

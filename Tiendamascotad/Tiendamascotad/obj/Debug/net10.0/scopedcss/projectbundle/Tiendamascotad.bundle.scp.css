@@ -308,118 +308,6 @@ a[b-0264clh1uw]{
             color: #f5f5f5;
         }
 
-/* /Components/Pages/Contactanos.razor.rz.scp.css */
-/* CSS for Contactanos component */
-
-body[b-v4oik8hhx6] {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-    
-}
-
-.formulario-contenedor[b-v4oik8hhx6] {
-    width: 100%;
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-
-}
-
-    .formulario-contenedor h2[b-v4oik8hhx6] {
-        font-family: "manjari";
-        font-size: 6vh;
-        font-weight: 700;
-        color: #605555;
-        text-align:center;
-    }
-
-.campo[b-v4oik8hhx6] {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
-    
-}
-
-    .campo label[b-v4oik8hhx6] {
-        font-family: "manjari";
-        color: #605555;
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-    .campo input[b-v4oik8hhx6],
-    .campo textarea[b-v4oik8hhx6] {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 15px;
-        box-sizing: border-box;
-    }
-
-    .campo textarea[b-v4oik8hhx6] {
-        min-height: 120px;
-        resize: vertical;
-    }
-
-        .campo input:focus[b-v4oik8hhx6],
-        .campo textarea:focus[b-v4oik8hhx6] {
-            outline: none;
-            border-color: #6c63ff;
-        }
-
-button[b-v4oik8hhx6] {
-    padding: 12px 195px 12px 195px;
-    background-color: #E36A73;
-    border-radius: 10px;
-    color: #f5f5f5;
-    font-family: "manjari";
-    font-size: 2.6vh;
-    border:none;
-}
-
-    button:hover[b-v4oik8hhx6] {
-        opacity: 0.85;
-    }
-
-.persona[b-v4oik8hhx6] {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 12px;
-}
-
-    .persona p[b-v4oik8hhx6] {
-        margin: 8px 0;
-    }
-.campo[b-v4oik8hhx6]  input, .campo[b-v4oik8hhx6]  textarea{
-    background: transparent;
-    border: 1px solid;
-    color: #605656;
-    padding: 10px;
-    border-radius: 10px;
-    height: 4.9vh;
-}
-    .campo[b-v4oik8hhx6]  input[type="number"] {
-        appearance: textfield;
-        -moz-appearance: textfield;
-    }
-
-        .campo[b-v4oik8hhx6]  input[type="number"]::-webkit-inner-spin-button,
-        .campo[b-v4oik8hhx6]  input[type="number"]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
 /* /Components/Pages/Home.razor.rz.scp.css */
 /* CSS for Home component */
 *[b-2ro7ndw66d]{
@@ -541,16 +429,128 @@ button[b-v4oik8hhx6] {
     justify-content: center;
     align-content: center;
 }
-/* /Components/Pages/Mascotadoptada.razor.rz.scp.css */
+/* /Components/Pages/Login.razor.rz.scp.css */
+/* CSS for Contactanos component */
+
+body[b-r2zx9ov90y] {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    
+}
+
+.formulario-contenedor[b-r2zx9ov90y] {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+    .formulario-contenedor h2[b-r2zx9ov90y] {
+        font-family: "manjari";
+        font-size: 6vh;
+        font-weight: 700;
+        color: #605555;
+        text-align:center;
+    }
+
+.campo[b-r2zx9ov90y] {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    
+}
+
+    .campo label[b-r2zx9ov90y] {
+        font-family: "manjari";
+        color: #605555;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .campo input[b-r2zx9ov90y],
+    .campo textarea[b-r2zx9ov90y] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .campo textarea[b-r2zx9ov90y] {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+        .campo input:focus[b-r2zx9ov90y],
+        .campo textarea:focus[b-r2zx9ov90y] {
+            outline: none;
+            border-color: #6c63ff;
+        }
+
+button[b-r2zx9ov90y] {
+    padding: 12px 195px 12px 195px;
+    background-color: #E36A73;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-family: "manjari";
+    font-size: 2.6vh;
+    border:none;
+}
+
+    button:hover[b-r2zx9ov90y] {
+        opacity: 0.85;
+    }
+
+.persona[b-r2zx9ov90y] {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
+    .persona p[b-r2zx9ov90y] {
+        margin: 8px 0;
+    }
+.campo[b-r2zx9ov90y]  input, .campo[b-r2zx9ov90y]  textarea{
+    background: transparent;
+    border: 1px solid;
+    color: #605656;
+    padding: 10px;
+    border-radius: 10px;
+    height: 4.9vh;
+}
+    .campo[b-r2zx9ov90y]  input[type="number"] {
+        appearance: textfield;
+        -moz-appearance: textfield;
+    }
+
+        .campo[b-r2zx9ov90y]  input[type="number"]::-webkit-inner-spin-button,
+        .campo[b-r2zx9ov90y]  input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+/* /Components/Pages/User_profile.razor.rz.scp.css */
 /* CSS for Mascotadoptada component */
-h1[b-7q3s42vrad] {
+h1[b-sstcj1mdlm] {
     text-align: center;
     font-family: "Baloo 2";
     font-size: 3rem;
     margin: 13% 6% 4% 6%;
     color: #1f2c4c;
 }
-.fijar[b-7q3s42vrad] {
+.fijar[b-sstcj1mdlm] {
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -558,7 +558,7 @@ h1[b-7q3s42vrad] {
     margin: 5%;
     gap:25px
 }
-.perfil[b-7q3s42vrad] {
+.perfil[b-sstcj1mdlm] {
     display: flex;
     flex-direction: row;
     background-color: #f1f7fd;
@@ -574,13 +574,13 @@ h1[b-7q3s42vrad] {
     color: #1f2c4c;
 }
 
-.texto p[b-7q3s42vrad] {
+.texto p[b-sstcj1mdlm] {
     
         font-family: "Quicksand";
         font-weight: 500;
 }
 
-.imagen[b-7q3s42vrad] {
+.imagen[b-sstcj1mdlm] {
     background-color: aqua;
     width: 50%;
     height: 100%;
@@ -589,17 +589,17 @@ h1[b-7q3s42vrad] {
   
 }
 
- .imagen img[b-7q3s42vrad] {
+ .imagen img[b-sstcj1mdlm] {
         width: 100%;
         height: 100%;
         object-fit: fill;
         object-position: center;
  }
- .texto h3[b-7q3s42vrad]{
+ .texto h3[b-sstcj1mdlm]{
      line-height:1;
  }
 
-.texto[b-7q3s42vrad] {
+.texto[b-sstcj1mdlm] {
     display: flex;
     flex-direction: column;
     align-items:start;
@@ -612,11 +612,11 @@ h1[b-7q3s42vrad] {
     
 }
 
-.texto p[b-7q3s42vrad]{
+.texto p[b-sstcj1mdlm]{
     font-size:1.2rem;
     bottom:100%;
 }
-    .texto button[b-7q3s42vrad] {
+    .texto button[b-sstcj1mdlm] {
         font-family: "Quicksand";
         font-weight: 700;
         font-size: 1.2rem;
@@ -633,7 +633,7 @@ h1[b-7q3s42vrad] {
     
     }
 
-#g[b-7q3s42vrad]{
+#g[b-sstcj1mdlm]{
    font-size:0.9rem;
    position:absolute;
    top:27%;
