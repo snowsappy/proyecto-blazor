@@ -10,6 +10,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddScoped<Mascota>();
 builder.Services.AddScoped<Zozo_services>();
+builder.Services.AddScoped<Usuario_actual>();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<Zozo_services>(client =>
 {

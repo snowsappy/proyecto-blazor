@@ -20,8 +20,9 @@
         display: flex;
         gap: 60px;
         font-family: "Quicksand";
-        font-weight: 600;
+        font-weight: 500;
         color: #f5f5f5;
+        font-size:1.4rem
     }
 
     .navegacion img[b-0264clh1uw] {
@@ -46,9 +47,7 @@
     }
 }
 .adoptadas-layout .navegacion[b-0264clh1uw] {
-    background-color: #538fde;
-    padding: 1% 1%;
-    border-radius: 50px;
+  
 }
 a[b-0264clh1uw]{
     text-decoration:none;

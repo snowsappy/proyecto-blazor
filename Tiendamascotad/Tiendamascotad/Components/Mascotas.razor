@@ -12,7 +12,7 @@
     <div class="texto">
         <h5>@mascota.name</h5>
         <p>@mascota.breed</p>
-        <button class="boton"><a href="/card">Adopt</a> </button>
+        <button class="boton" @onclick="info"><a href="/card/@mascota.id">Adopt</a> </button>
 
     </div>
    
@@ -21,6 +21,7 @@
 
 
 @code{
+    
 
     [Parameter]
     public Mascota mascota { get; set; }

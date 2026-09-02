@@ -1,74 +1,138 @@
-﻿@page "/contact us"
+﻿@page "/login"
 @rendermode InteractiveServer
-@inject Zozo_services zozo_Services
-
+@inject Zozo_services zozo_services
+@inject NavigationManager NavigationManager
+@inject Usuario_actual usuario_actual
+@if (inicio == true) {
     <h2>Contáctanos</h2>
-<div class="formulario-contenedor">
-    <EditForm Model="persona" OnValidSubmit="registrar">
+    <div class="formulario-contenedor">
+        <EditForm Model="persona" OnValidSubmit="registrar">
 
-        <DataAnnotationsValidator  />
+            <DataAnnotationsValidator  />
 
-        <div class="campo">
-            <label>firstname</label>
-            <InputText @bind-Value="persona.firstname" />
-            <ValidationMessage For="@(() => persona.firstname)" />
-        </div>
-        <div class="campo">
-            <label>lastname</label>
-            <InputText @bind-Value="persona.lastname" />
-            <ValidationMessage For="@(() => persona.lastname)" />
-        </div>
-        <div class="campo">
-            <label>phone number</label>
-            <InputText @bind-Value="persona.phone" />
-            <ValidationMessage For="@(() => persona.phone)" />
-        </div>
-    <div class="campo">
-        <label>adress</label>
-        <InputText @bind-Value="persona.adress" />
-        <ValidationMessage For="@(() => persona.adress)" />
+            <div class="campo">
+                <label>firstname</label>
+                <InputText @bind-Value="persona.firstname" />
+                <ValidationMessage For="@(() => persona.firstname)" />
+            </div>
+            <div class="campo">
+                <label>lastname</label>
+                <InputText @bind-Value="persona.lastname" />
+                <ValidationMessage For="@(() => persona.lastname)" />
+            </div>
+            <div class="campo">
+                <label>phone number</label>
+                <InputText @bind-Value="persona.phone" />
+                <ValidationMessage For="@(() => persona.phone)" />
+            </div>
+            <div class="campo">
+                <label>adress</label>
+                <InputText @bind-Value="persona.adress" />
+                <ValidationMessage For="@(() => persona.adress)" />
+            </div>
+            <div class="campo">
+                <label>email</label>
+                <InputText @bind-Value="persona.email" />
+                <ValidationMessage For="@(() => persona.email)" />
+            </div>
+            <div class="campo">
+                <label>password</label>
+                <InputText type="password" @bind-Value="persona.password" />
+                <ValidationMessage For="@(() => persona.password)" />
+            </div>
+            <p @onclick="iniciarsesion">already have an account?sing in</p>
+
+            <button type="submit">Enviar</button>
+
+        </EditForm>
+
     </div>
-        <div class="campo">
-            <label>email</label>
-            <InputText @bind-Value="persona.email" />
-            <ValidationMessage For="@(() => persona.email)" />
-        </div>
-        <div class="campo">
-            <label>password</label>
-            <InputText type="password" @bind-Value="persona.password" />
-            <ValidationMessage For="@(() => persona.password)" />
-        </div>
-       
 
-        <button type="submit">Enviar</button>
+            }
+@if (inicio == false)
+{
+    
+    <div class="formulario-contenedor">
+        <EditForm Model="login" OnValidSubmit="iniciar">
 
-    </EditForm>
+            <DataAnnotationsValidator />
 
-</div>
+            <div class="campo">
+                <label>email</label>
+                <InputText @bind-Value="login.email" />
+                <ValidationMessage For="@(() => login.email)" />
+            </div>
+            <div class="campo">
+                <label>password</label>
+                <InputText type="password" @bind-Value="login.password" />
+                <ValidationMessage For="@(() => login.password)" />
+            </div>
+            <p @onclick="registrarse">are you new?sign up</p>
 
-´<p>@mensaje</p>
+            <button type="submit">Enviar</button>
+
+        </EditForm>
+
+    </div>
+
+}
 @code
 {
-    List<Persona> usuario = new();
+    bool inicio = false;
+    public void registrarse()
+    {
+        inicio = true;
+    }
+    public void iniciarsesion()
+    {
+        inicio = false;
+    }
+
     Persona persona = new();
     string mensaje;
 
     public async Task registrar()
     {
-        bool resultado = await zozo_Services.RegistrarPersona(persona);
+        bool resultado = await zozo_services.RegistrarPersona(persona);
         persona.rol = 1;
         if (resultado)
         {
             mensaje = "User registered successfully";
+            NavigationManager.NavigateTo("/login");
         }
         else
         {
             mensaje = "There was an error registering the user";
         }
-        await zozo_Services.RegistrarPersona(persona);
+        await zozo_services.RegistrarPersona(persona);
 
         persona = new();
     }
-    
 
+    Ayudalogin login = new();
+    
+    public async Task iniciar()
+    {
+        var respuesta = await zozo_services.iniciar(login);
+
+        if (respuesta.IsSuccessStatusCode)
+        {
+            
+            var usuario = await respuesta.Content.ReadFromJsonAsync<Usuario_actual>();
+
+            usuario_actual.id_user = usuario.id_user;
+            usuario_actual.firstname = usuario.firstname;
+            usuario_actual.lastname = usuario.lastname;
+            usuario_actual.email = usuario.email;
+            usuario_actual.phone = usuario.phone;
+            usuario_actual.adress = usuario.adress;
+          
+
+            NavigationManager.NavigateTo("/adoptadas");
+        }
+        else
+        {
+            mensaje = "Email o contraseña incorrectos";
+        }
+    }
 }

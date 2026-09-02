@@ -33,11 +33,11 @@
         content: "Your lovely pet is waiting for you";
         position: absolute;
         font-family: "fredoka";
-        font-size: 7rem;
+        font-size: 6rem;
         font-weight: 700;
         top: 30%;
         
-        text-align: start;
+        text-align: center;
         letter-spacing: 0.1%;
         line-height: 1;
         animation: cargar-texto-b-2ro7ndw66d 2s ease-in;
@@ -48,13 +48,16 @@
         content: "When you adopt, you are not only gaining a loyal friend—you are also giving an animal  the opportunity to live a better life.";
         position: absolute;
         top: 65%;
-        margin: 1% 4%;
+     
         font-size: 1.5rem;
         font-family: "manjari";
         font-weight:200;
         line-height:1;
-        text-align:start;
+        text-align:center;
         animation:cargar-texto-b-2ro7ndw66d 2.5s ease-in;
+        left:50%;
+        transform:translate(-50%);
+       width:80%;
     }
 .parte1 p[b-2ro7ndw66d]{
     font-family:"baloo 2";

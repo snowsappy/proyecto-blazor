@@ -1,4 +1,5 @@
 using API_pets.Models;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +18,15 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-/*app.MapGet("/users", async (zozo_context context) =>
+app.MapGet("/users/{id}", async (int id ,zozo_context context) =>
 {
-    return await context.users.ToListAsync();
+    var user = await context.users.FindAsync(id);
+    if (user == null)
+    {
+        return Results.NotFound();
+    }
+
+    return Results.Ok(user);
 });
 
 app.MapGet("/pets", async (zozo_context context) =>
@@ -32,9 +39,19 @@ app.MapGet("/request", async (zozo_context context) =>
     return await context.request_Adoptions.ToListAsync();
 });
 
-*/
 
 
+app.MapGet("/pets/{id}", async (int id, zozo_context context) =>
+{
+    var mascota = await context.pets.FindAsync(id);
+
+    if (mascota == null)
+    {
+        return Results.NotFound();
+    }
+
+    return Results.Ok(mascota);
+});
 
 //repasar a profundidad esto
 app.MapPost("/users/registrar", async (User nuevoUsuario, zozo_context context) =>
@@ -59,6 +76,36 @@ app.MapDelete("/users/{id}", async (int id, zozo_context context) =>
 
     return Results.Ok();
 });
+app.MapPost("/login", async (Ayudalogin login, zozo_context context) =>
+{
+    var usuario = await context.users
+        .FirstOrDefaultAsync(u => u.email == login.email);
+
+    if (usuario == null || usuario.password != login.password)
+        return Results.BadRequest("Email o contraseña incorrectos");
+
+    return Results.Ok(usuario);
+});
+
+//app.MapPost("/login", async (string email, string password, zozo_context context) =>
+//{
+//    var usuario = await context.users
+//        .FirstOrDefaultAsync(u => u.email == email);
+
+//    if (usuario == null)
+//    {
+//        return Results.NotFound("you are not registered");
+//    }
+
+//    if (usuario.password != password)
+//    {
+//        return Results.BadRequest("wrong password");
+//    }
+
+//    return Results.Ok("succefull login");
+//});
+
+
 //repasar a profundidad esto
 app.MapPost("/pets/registrar", async (Pet newpet, zozo_context context) =>
 {

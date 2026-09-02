@@ -173,7 +173,8 @@ C:\Users\sulei\OneDrive\Documentos\proyecto-blazor\Tiendamascotad\Tiendamascotad
 C:\Users\sulei\OneDrive\Documentos\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\pysvwou6zd-{0}-icckn9vfvl-icckn9vfvl.gz
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Pages\Login.razor.rz.scp.css
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Pages\User_profile.razor.rz.scp.css
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\r10jrjwh1w-{0}-8cguiufdk8-8cguiufdk8.gz
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\pysvwou6zd-{0}-8cguiufdk8-8cguiufdk8.gz
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\z4pw25l7m5-{0}-qcnkhbt5lj-qcnkhbt5lj.gz
-C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\3bg9pin55u-{0}-12rnbzdyyc-12rnbzdyyc.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\z4pw25l7m5-{0}-f7fxoh55ae-f7fxoh55ae.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\3bg9pin55u-{0}-68qhiysw0j-68qhiysw0j.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\scopedcss\Components\Pages\Description.razor.rz.scp.css
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\r10jrjwh1w-{0}-72wyhwkid5-72wyhwkid5.gz
+C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\obj\Debug\net10.0\compressed\pysvwou6zd-{0}-72wyhwkid5-72wyhwkid5.gz

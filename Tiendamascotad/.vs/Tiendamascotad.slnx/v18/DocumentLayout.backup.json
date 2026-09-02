@@ -3,52 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\pages\\description.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\pages\\description.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\mascotas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\mascotas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\pages\\user_profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\pages\\user_profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\models\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\models\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\models\\zozo_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\models\\zozo_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F09DB33-C1EE-474A-8F03-0497927DC492}|API pets\\API pets.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\api pets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F09DB33-C1EE-474A-8F03-0497927DC492}|API pets\\API pets.csproj|solutionrelative:api pets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\pages\\user_profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\pages\\user_profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F09DB33-C1EE-474A-8F03-0497927DC492}|API pets\\API pets.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\api pets\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F09DB33-C1EE-474A-8F03-0497927DC492}|API pets\\API pets.csproj|solutionrelative:api pets\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\pages\\user_profile.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\pages\\user_profile.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\models\\usuario_actual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\models\\usuario_actual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F09DB33-C1EE-474A-8F03-0497927DC492}|API pets\\API pets.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\api pets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F09DB33-C1EE-474A-8F03-0497927DC492}|API pets\\API pets.csproj|solutionrelative:api pets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F09DB33-C1EE-474A-8F03-0497927DC492}|API pets\\API pets.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\api pets\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F09DB33-C1EE-474A-8F03-0497927DC492}|API pets\\API pets.csproj|solutionrelative:api pets\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|c:\\users\\aprendiz\\documents\\proyecto-blazor\\tiendamascotad\\tiendamascotad\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9F0319B1-B03A-0F91-7683-70360E691BB8}|Tiendamascotad\\Tiendamascotad.csproj|solutionrelative:tiendamascotad\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,107 +54,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Zozo_services.cs",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Zozo_services.cs",
-              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Models\\Zozo_services.cs",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Zozo_services.cs",
-              "RelativeToolTip": "Tiendamascotad\\Components\\Models\\Zozo_services.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T22:34:16.924Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Program.cs",
-              "RelativeDocumentMoniker": "Tiendamascotad\\Program.cs",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Program.cs",
-              "RelativeToolTip": "Tiendamascotad\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T20:39:07.746Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User_profile.razor",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\User_profile.razor",
-              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Pages\\User_profile.razor",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\User_profile.razor",
-              "RelativeToolTip": "Tiendamascotad\\Components\\Pages\\User_profile.razor",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T20:38:57.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Mascota.cs",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Mascota.cs",
-              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Models\\Mascota.cs",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Mascota.cs",
-              "RelativeToolTip": "Tiendamascotad\\Components\\Models\\Mascota.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T20:33:52.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Layout\\MainLayout.razor",
               "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "Tiendamascotad\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T20:18:12.651Z",
+              "WhenOpened": "2026-09-02T17:49:49.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Mascotas.razor",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Mascotas.razor",
-              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Mascotas.razor",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Mascotas.razor",
-              "RelativeToolTip": "Tiendamascotad\\Components\\Mascotas.razor",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T20:14:22.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Description.razor",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\Description.razor",
-              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Pages\\Description.razor",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\Description.razor",
-              "RelativeToolTip": "Tiendamascotad\\Components\\Pages\\Description.razor",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T18:04:46.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\API pets\\Models\\User.cs",
-              "RelativeDocumentMoniker": "API pets\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\API pets\\Models\\User.cs",
-              "RelativeToolTip": "API pets\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Program.cs",
+              "RelativeDocumentMoniker": "Tiendamascotad\\Program.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Program.cs",
+              "RelativeToolTip": "Tiendamascotad\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T16:57:44.994Z"
+              "WhenOpened": "2026-09-02T17:44:40.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuario_actual.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Usuario_actual.cs",
+              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Models\\Usuario_actual.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Usuario_actual.cs",
+              "RelativeToolTip": "Tiendamascotad\\Components\\Models\\Usuario_actual.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T17:40:25.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "Tiendamascotad\\Components\\Pages\\Login.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-02T17:33:21.012Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -168,43 +116,85 @@
               "RelativeDocumentMoniker": "API pets\\Program.cs",
               "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\API pets\\Program.cs",
               "RelativeToolTip": "API pets\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T15:01:57.227Z"
+              "WhenOpened": "2026-09-02T17:23:22.893Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Persona.cs",
-              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Models\\Persona.cs",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Persona.cs",
-              "RelativeToolTip": "Tiendamascotad\\Components\\Models\\Persona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Zozo_services.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Zozo_services.cs",
+              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Models\\Zozo_services.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Models\\Zozo_services.cs",
+              "RelativeToolTip": "Tiendamascotad\\Components\\Models\\Zozo_services.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T14:50:18.225Z"
+              "WhenOpened": "2026-09-02T17:22:00.716Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Pages\\Login.razor",
-              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\Login.razor",
-              "RelativeToolTip": "Tiendamascotad\\Components\\Pages\\Login.razor",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T14:49:06.028Z"
+              "Title": "Pet.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\API pets\\Models\\Pet.cs",
+              "RelativeDocumentMoniker": "API pets\\Models\\Pet.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\API pets\\Models\\Pet.cs",
+              "RelativeToolTip": "API pets\\Models\\Pet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T17:21:46.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "Tiendamascotad\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-02T16:36:23.054Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "User_profile.razor.css",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\User_profile.razor.css",
+              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Pages\\User_profile.razor.css",
+              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\User_profile.razor.css",
+              "RelativeToolTip": "Tiendamascotad\\Components\\Pages\\User_profile.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-02T16:34:48.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User_profile.razor",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\User_profile.razor",
+              "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Pages\\User_profile.razor",
+              "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\User_profile.razor",
+              "RelativeToolTip": "Tiendamascotad\\Components\\Pages\\User_profile.razor",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-02T16:24:53.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Tiendamascotad\\Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\Aprendiz\\Documents\\proyecto-blazor\\Tiendamascotad\\Tiendamascotad\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "Tiendamascotad\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwCcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-20T17:13:56.922Z",
               "EditorCaption": ""

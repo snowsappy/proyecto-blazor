@@ -2,11 +2,54 @@
 @rendermode InteractiveServer
 
 @page "/adoptadas"
-
+@inject Usuario_actual usuarioActual
 <PageTitle>My contributions</PageTitle>
 
 <h1>My new friends</h1>
+<div class="main">
+    
+    <div class="user-info">
+        <div><img src="" alt="profile" /></div>
+        <h3>welcome back.@usuarioActual.firstname  @usuarioActual.lastname</h3>
+        <p>fskjgkfsjgfdlkgjdldfjhgldhjglgfhjf sldkjfgdldfjghlkgd sflkjhlghjdlhnfkln lfsjnlgmgflñnmgf</p>
+    </div>
+    <div class="adoptadas">
+        @*  <div class="fijar">
 
+            @foreach (var mascota in mascotasadoptadaslista.lista_adoptadas)
+            {
+               <article class="perfil">
+			        <div class="imagen">
+                        <img src="@mascota.imagen" />
+                    </div>
+                   <div class="texto">
+                    <p id="g">Thank you for helping us</p>
+                    <h3> your friend name is: @mascota.nombre</h3>
+                     <div class="botones">
+                        <p>is a beatiful @mascota.especie looking forward to stay with you</p>
+                        <p>along this @mascota.edad years alive</p>
+                     </div>
+                     <button>See info</button>
+                   </div>
+
+               </article>
+            </div>
+
+       *@
+
+</div>
+   
+    <article class="directions">
+        <p>direction:<br /> my directions</p>
+        <p>your pet is gonna get trough this route y¿to yuor lovely home.</p>
+    </article>
+    <article class="contacto">
+        <ul>
+            <li><h6>phone</h6><p>345454555</p></li>
+            <li><h6>Email</h6><p>345454555</p></li>
+        </ul>
+    </article>
+</div>
 @* <div class="fijar">
 
     @foreach (var mascota in mascotasadoptadaslista.lista_adoptadas)

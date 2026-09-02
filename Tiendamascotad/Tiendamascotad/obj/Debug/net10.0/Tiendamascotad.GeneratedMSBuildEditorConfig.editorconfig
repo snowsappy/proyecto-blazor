@@ -8,13 +8,14 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tiendamascotad
 build_property.RootNamespace = Tiendamascotad
 build_property.ProjectDir = C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.RazorLangVersion = 9.0
+build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad
@@ -24,10 +25,6 @@ build_property.EnableCodeStyleSeverity =
 
 [C:/Users/Aprendiz/Documents/proyecto-blazor/Tiendamascotad/Tiendamascotad/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Aprendiz/Documents/proyecto-blazor/Tiendamascotad/Tiendamascotad/Components/Pages/Description.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXNjcmlwdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aprendiz/Documents/proyecto-blazor/Tiendamascotad/Tiendamascotad/Components/Pages/Error.razor]
@@ -57,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope = b-9f3kzz4cb8
 [C:/Users/Aprendiz/Documents/proyecto-blazor/Tiendamascotad/Tiendamascotad/Components/Mascotas.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYXNjb3Rhcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-y4ol2jjobw
+
+[C:/Users/Aprendiz/Documents/proyecto-blazor/Tiendamascotad/Tiendamascotad/Components/Pages/Description.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXNjcmlwdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-dyrz89iihj
 
 [C:/Users/Aprendiz/Documents/proyecto-blazor/Tiendamascotad/Tiendamascotad/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
