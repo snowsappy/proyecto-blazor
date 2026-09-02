@@ -1,6 +1,8 @@
 ﻿@page "/card/{id:int}"
-@inject Mascota mascota
+
 @inject Zozo_services zozo_services
+@inject Usuario_actual usuario_actual
+@rendermode InteractiveServer
 <div class="body">
 <div class="image">
     <img src="@mascota.image" alt="foto mascota" />
@@ -8,21 +10,57 @@
 <div class=" info">
     <h5>@mascota.specie</h5>
     <h1>@mascota.name</h1>
+    <p>@mes</p>
     <p>@mascota.description</p>
     <div><p>@mascota.birthdate</p> <p>@mascota.breed</p></div>
-    <button class="boton">Adopt now</button>
+    <button class="boton" @onclick="adoptar">@adoptada</button>
 </div>
 </div>
 
 @code {
     [Parameter]
     public int id { get; set; }
-
+    public Mascota? mascota =new();
     protected override async Task OnInitializedAsync()
     {
         mascota = await zozo_services.unamascota(id);
     }
+    string adoptada = "Adopt now";
+    string mes;
+    public async Task adoptar()
+    {
+        adoptada = "Adopted!";
+        if (usuario_actual ==null)
+        {
+            Console.WriteLine("debe iniciar sesion");
+        }
+        else { 
+        Solicitud solicitud = new Solicitud
+            {
+                id_user = usuario_actual.id_user,
+                id_pet = mascota.id,
+                date_request = DateOnly.FromDateTime(DateTime.Now),
+                adoption_state = false,
 
+            };
+
+        var solicitudCreada = await zozo_services.CrearSolicitud(solicitud);
+
+        if (solicitudCreada == null)
+        {
+            mes = "nada";
+            return;
+        }
+        // navigationManager.NavigateTo("/login");
+        await Task.Delay(60000);
+
+        solicitudCreada.adoption_state = true;
+
+        await zozo_services.ActualizarSolicitud(
+            solicitudCreada.id_adoption, solicitudCreada
+        );
+    }
+    }
 
     
 }

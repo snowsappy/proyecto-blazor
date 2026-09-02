@@ -1,5 +1,8 @@
 /* CSS for Mascotadoptada component */
 
+body {
+    background-color: #eef4ff;
+}
 
 h1 {
     text-align: center;
@@ -96,3 +99,257 @@ h1 {
    position:absolute;
    top:27%;
 }
+.main {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items:start;
+    width: 100%;
+    min-width: 80%;
+    height: 100vh;
+    min-width: 80vh;
+    padding: 120px;
+    background: #eef4ff;
+    
+    font-family: Arial, sans-serif;
+  
+}
+
+.user-info{
+    display:flex;
+    flex-direction:row;
+    background-color:#8c8a9d;
+    width:100%;
+    height:20vh;
+    max-width:100%;
+    max-height:100vh;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.main {
+    min-height: 100vh;
+   
+}
+
+
+
+
+.grupo-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+
+
+
+.user-info {
+    background: white;
+    border-radius: 25px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    min-height: 180px;
+}
+
+    .user-info > div {
+        width: 130px;
+        height: 130px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #ddd;
+    }
+
+    .user-info img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .user-info h3 {
+        color: #28235f;
+        font-size: 22px;
+        margin: 0 0 12px;
+    }
+
+    .user-info p {
+        color: #88869b;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+
+
+
+.adoptadas {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+    .adoptadas h1 {
+        color: #28235f;
+        font-size: 25px;
+        margin: 0 0 25px;
+    }
+
+
+
+
+.fijar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+.perfil {
+    display: flex;
+    background: #f0efff;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 230px;
+}
+
+
+
+
+.imagen {
+    width: 240px;
+    flex-shrink: 0;
+}
+
+    .imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+.texto {
+    padding: 22px 25px;
+    flex: 1;
+}
+
+    .texto #g {
+        color: #5951ae;
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 0 5px;
+    }
+
+    .texto h3 {
+        color: #28235f;
+        font-size: 21px;
+        margin: 5px 0 15px;
+    }
+
+.botones {
+    color: #77758c;
+}
+
+    .botones p {
+        margin: 8px 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
+        .botones p:has(+ p) {
+            color: #77758c;
+        }
+
+
+
+
+.texto > button {
+    margin-top: 12px;
+    border: none;
+    background: #5951ae;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+    .texto > button:hover {
+        background: #47419a;
+    }
+
+
+.grupo-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items:center;
+}
+
+
+.directions {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    min-height: 180px;
+}
+
+    .directions p:first-child {
+        color: #28235f;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    .directions p:last-child {
+        color: #88869b;
+        line-height: 1.5;
+    }
+
+
+
+
+.contacto {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+    .contacto ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contacto li {
+        margin-bottom: 20px;
+    }
+
+    .contacto h6 {
+        color: #aaa8b7;
+        font-size: 13px;
+        margin: 0 0 5px;
+        text-transform: uppercase;
+    }
+
+    .contacto p {
+        color: #4f4d66;
+        margin: 0;
+        font-size: 15px;
+    }
+
+
+.botones p:last-child {
+    color: #5951ae;
+    font-weight: bold;
+}
+
+

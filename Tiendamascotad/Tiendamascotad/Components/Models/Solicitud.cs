@@ -11,6 +11,6 @@ namespace Tiendamascotad.Components.Models
         public int id_pet { get; set; }
         public DateOnly date_request { get; set; }
         public bool adoption_state { get; set; }
-        public string reason { get; set; }
+      
     }
 }

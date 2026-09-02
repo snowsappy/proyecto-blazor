@@ -1,54 +1,98 @@
 ﻿
 @rendermode InteractiveServer
-
+@inject Zozo_services zozo_services
 @page "/adoptadas"
-@inject Usuario_actual usuarioActual
+@inject Usuario_actual usuario_actual
 <PageTitle>My contributions</PageTitle>
 
-<h1>My new friends</h1>
+
 <div class="main">
-    
-    <div class="user-info">
-        <div><img src="" alt="profile" /></div>
-        <h3>welcome back.@usuarioActual.firstname  @usuarioActual.lastname</h3>
-        <p>fskjgkfsjgfdlkgjdldfjhgldhjglgfhjf sldkjfgdldfjghlkgd sflkjhlghjdlhnfkln lfsjnlgmgflñnmgf</p>
-    </div>
-    <div class="adoptadas">
-        @*  <div class="fijar">
-
-            @foreach (var mascota in mascotasadoptadaslista.lista_adoptadas)
+    <div class="grupo-1">
+        <div class="user-info">
+            <div><img src="" alt="profile" /></div>
+            <h3>welcome back.@usuario_actual.firstname  @usuario_actual.lastname</h3>
+            <p>fskjgkfsjgfdlkgjdldfjhgldhjglgfhjf sldkjfgdldfjghlkgd sflkjhlghjdlhnfkln lfsjnlgmgflñnmgf</p>
+        </div>
+        <div class="adoptadas">
+            <h1>My new friends</h1>
+            @if (solicitudes == null)
             {
-               <article class="perfil">
-			        <div class="imagen">
-                        <img src="@mascota.imagen" />
-                    </div>
-                   <div class="texto">
-                    <p id="g">Thank you for helping us</p>
-                    <h3> your friend name is: @mascota.nombre</h3>
-                     <div class="botones">
-                        <p>is a beatiful @mascota.especie looking forward to stay with you</p>
-                        <p>along this @mascota.edad years alive</p>
-                     </div>
-                     <button>See info</button>
-                   </div>
+                <p>Loading...</p>
+            }
+            else if (solicitudes.Count == 0)
+            {
+                <p>You don't have any pets yet.</p>
+            }
+            else
+            {
+                <div class="fijar">
+                    @foreach (var solicitud in solicitudes)
+                    {
+                        var mascota = mascotas.FirstOrDefault(m => m.id == solicitud.id_pet);
 
-               </article>
-            </div>
+                        if (mascota != null)
+                        {
+                            <article class="perfil">
 
-       *@
+                                <div class="imagen">
+                                    <img src="@mascota.image" alt="@mascota.name" />
+                                </div>
 
-</div>
-   
-    <article class="directions">
-        <p>direction:<br /> my directions</p>
-        <p>your pet is gonna get trough this route y¿to yuor lovely home.</p>
-    </article>
-    <article class="contacto">
-        <ul>
-            <li><h6>phone</h6><p>345454555</p></li>
-            <li><h6>Email</h6><p>345454555</p></li>
-        </ul>
-    </article>
+                                <div class="texto">
+
+                                    <p id="g">Thank you for helping us</p>
+
+                                    <h3>Your friend name is: @mascota.name</h3>
+
+                                    <div class="botones">
+
+                                        <p>
+                                            Is a beautiful @mascota.specie
+                                            looking forward to stay with you.
+                                        </p>
+
+                                        <p>
+                                            Breed: @mascota.breed
+                                        </p>
+
+                                        @if (solicitud.adoption_state == false)
+                                        {
+                                            <p>Adoption status: In process</p>
+                                        }
+                                        else
+                                        {
+                                            <p>Adoption status: Adopted</p>
+                                        }
+
+                                        <p>
+                                            Request date: @solicitud.date_request
+                                        </p>
+
+                                    </div>
+
+                                    <button>See info</button>
+
+                                </div>
+
+                            </article>
+                        }
+                    }
+                </div>
+            }
+        </div>
+        </div>
+   <div class="grupo-2">
+        <article class="directions">
+            <p>direction:<br /> my directions</p>
+            <p>your pet is gonna get trough this route y¿to yuor lovely home.</p>
+        </article>
+        <article class="contacto">
+            <ul>
+                <li><h6>phone</h6><p>345454555</p></li>
+                <li><h6>Email</h6><p>345454555</p></li>
+            </ul>
+        </article>
+   </div>
 </div>
 @* <div class="fijar">
 
@@ -77,5 +121,23 @@
 @code {
     
     //uso inject por que el new no me sirve
+    private List<Solicitud>? solicitudes;
+    private List<Mascota> mascotas = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        solicitudes = await zozo_services.ObtenerSolicitudesUsuario(usuario_actual.id_user);
+
+        foreach (var solicitud in solicitudes)
+        {
+            var mascota = await zozo_services.unamascota(solicitud.id_pet);
+
+            if (mascota != null)
+            {
+                mascotas.Add(mascota);
+            }
+        }
+    }
+  
 
 }

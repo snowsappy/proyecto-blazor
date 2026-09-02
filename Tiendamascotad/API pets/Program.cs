@@ -1,4 +1,5 @@
 using API_pets.Models;
+using Azure.Core;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,14 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+app.MapGet("/request/user/{id}", async (int id, zozo_context context) =>
+{
+    var solicitudes = await context.adoption_request
+        .Where(r => r.id_user == id)
+        .ToListAsync();
+
+    return Results.Ok(solicitudes);
+});
 app.MapGet("/users/{id}", async (int id ,zozo_context context) =>
 {
     var user = await context.users.FindAsync(id);
@@ -36,7 +45,7 @@ app.MapGet("/pets", async (zozo_context context) =>
 
 app.MapGet("/request", async (zozo_context context) =>
 {
-    return await context.request_Adoptions.ToListAsync();
+    return await context.adoption_request.ToListAsync();
 });
 
 
@@ -52,7 +61,21 @@ app.MapGet("/pets/{id}", async (int id, zozo_context context) =>
 
     return Results.Ok(mascota);
 });
+app.MapPut("/request/{id}", async (int id, Request_adoption datos, zozo_context context) =>
+{
+    var solicitud = await context.adoption_request.FindAsync(id);
 
+    if (solicitud == null)
+    {
+        return Results.NotFound();
+    }
+
+    solicitud.adoption_state = datos.adoption_state;
+
+    await context.SaveChangesAsync();
+
+    return Results.Ok(solicitud);
+});
 //repasar a profundidad esto
 app.MapPost("/users/registrar", async (User nuevoUsuario, zozo_context context) =>
 {
@@ -129,49 +152,15 @@ app.MapDelete("/pets/{id}", async (int id, zozo_context context) =>
     return Results.Ok();
 });
 
-app.MapPut("pets/actualizar", async (int id, Pet datos, zozo_context context) =>
-{
-    context.pets.Update(datos);
-    await context.SaveChangesAsync();
 
-    return context;
-});
 app.MapPost("/request", async (Request_adoption request, zozo_context context) =>
 {
-    context.request_Adoptions.Add(request);
+    context.adoption_request.Add(request);
     await context.SaveChangesAsync();
 
     return request;
 });
 //estudiar la diferencia de patch y put
-app.MapPatch("/users/{id}", async (int id, User datos, zozo_context context) =>
-{
-    var usuario = await context.users.FindAsync(id);
-
-    if (usuario == null)
-    {
-        return Results.NotFound();
-    }
-
-    if (datos.firstname != null)
-    {
-        usuario.firstname = datos.firstname;
-    }
-
-    if (datos.phone != null)
-    {
-        usuario.phone = datos.phone;
-    }
-
-    if (datos.email != null)
-    {
-        usuario.email = datos.email;
-    }
-
-    await context.SaveChangesAsync();
-
-    return Results.Ok(usuario);
-});
 
 
 app.UseHttpsRedirection();

@@ -1,5 +1,8 @@
 /* CSS for Mascotadoptada component */
 
+body[b-sstcj1mdlm] {
+    background-color: #eef4ff;
+}
 
 h1[b-sstcj1mdlm] {
     text-align: center;
@@ -96,3 +99,257 @@ h1[b-sstcj1mdlm] {
    position:absolute;
    top:27%;
 }
+.main[b-sstcj1mdlm] {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items:start;
+    width: 100%;
+    min-width: 80%;
+    height: 100vh;
+    min-width: 80vh;
+    padding: 120px;
+    background: #eef4ff;
+    
+    font-family: Arial, sans-serif;
+  
+}
+
+.user-info[b-sstcj1mdlm]{
+    display:flex;
+    flex-direction:row;
+    background-color:#8c8a9d;
+    width:100%;
+    height:20vh;
+    max-width:100%;
+    max-height:100vh;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.main[b-sstcj1mdlm] {
+    min-height: 100vh;
+   
+}
+
+
+
+
+.grupo-1[b-sstcj1mdlm] {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+
+
+
+.user-info[b-sstcj1mdlm] {
+    background: white;
+    border-radius: 25px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    min-height: 180px;
+}
+
+    .user-info > div[b-sstcj1mdlm] {
+        width: 130px;
+        height: 130px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #ddd;
+    }
+
+    .user-info img[b-sstcj1mdlm] {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .user-info h3[b-sstcj1mdlm] {
+        color: #28235f;
+        font-size: 22px;
+        margin: 0 0 12px;
+    }
+
+    .user-info p[b-sstcj1mdlm] {
+        color: #88869b;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+
+
+
+.adoptadas[b-sstcj1mdlm] {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+    .adoptadas h1[b-sstcj1mdlm] {
+        color: #28235f;
+        font-size: 25px;
+        margin: 0 0 25px;
+    }
+
+
+
+
+.fijar[b-sstcj1mdlm] {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+.perfil[b-sstcj1mdlm] {
+    display: flex;
+    background: #f0efff;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 230px;
+}
+
+
+
+
+.imagen[b-sstcj1mdlm] {
+    width: 240px;
+    flex-shrink: 0;
+}
+
+    .imagen img[b-sstcj1mdlm] {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+.texto[b-sstcj1mdlm] {
+    padding: 22px 25px;
+    flex: 1;
+}
+
+    .texto #g[b-sstcj1mdlm] {
+        color: #5951ae;
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 0 5px;
+    }
+
+    .texto h3[b-sstcj1mdlm] {
+        color: #28235f;
+        font-size: 21px;
+        margin: 5px 0 15px;
+    }
+
+.botones[b-sstcj1mdlm] {
+    color: #77758c;
+}
+
+    .botones p[b-sstcj1mdlm] {
+        margin: 8px 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
+        .botones p:has(+ p)[b-sstcj1mdlm] {
+            color: #77758c;
+        }
+
+
+
+
+.texto > button[b-sstcj1mdlm] {
+    margin-top: 12px;
+    border: none;
+    background: #5951ae;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+    .texto > button:hover[b-sstcj1mdlm] {
+        background: #47419a;
+    }
+
+
+.grupo-2[b-sstcj1mdlm] {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items:center;
+}
+
+
+.directions[b-sstcj1mdlm] {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    min-height: 180px;
+}
+
+    .directions p:first-child[b-sstcj1mdlm] {
+        color: #28235f;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    .directions p:last-child[b-sstcj1mdlm] {
+        color: #88869b;
+        line-height: 1.5;
+    }
+
+
+
+
+.contacto[b-sstcj1mdlm] {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+    .contacto ul[b-sstcj1mdlm] {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contacto li[b-sstcj1mdlm] {
+        margin-bottom: 20px;
+    }
+
+    .contacto h6[b-sstcj1mdlm] {
+        color: #aaa8b7;
+        font-size: 13px;
+        margin: 0 0 5px;
+        text-transform: uppercase;
+    }
+
+    .contacto p[b-sstcj1mdlm] {
+        color: #4f4d66;
+        margin: 0;
+        font-size: 15px;
+    }
+
+
+.botones p:last-child[b-sstcj1mdlm] {
+    color: #5951ae;
+    font-weight: bold;
+}
+
+

@@ -13,6 +13,33 @@
     }
   ],
   "paths": {
+    "/request/user/{id}": {
+      "get": {
+        "tags": [
+          "API pets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/users/{id}": {
       "get": {
         "tags": [
@@ -58,41 +85,6 @@
             }
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "API pets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            }
-          },
-          "required": true
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -223,6 +215,43 @@
         }
       }
     },
+    "/request/{id}": {
+      "put": {
+        "tags": [
+          "API pets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "pattern": "^-?(?:0|[1-9]\\d*)$",
+              "type": [
+                "integer",
+                "string"
+              ],
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request_adoption"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/users/registrar": {
       "post": {
         "tags": [
@@ -296,50 +325,6 @@
         }
       }
     },
-    "/pets/actualizar": {
-      "put": {
-        "tags": [
-          "API pets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Pet"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/zozo_context"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -382,9 +367,6 @@
   },
   "components": {
     "schemas": {
-      "AutoTransactionBehavior": {
-        "type": "integer"
-      },
       "Ayudalogin": {
         "type": "object",
         "properties": {
@@ -395,145 +377,6 @@
             "type": "string"
           }
         }
-      },
-      "CascadeTiming": {
-        "type": "integer"
-      },
-      "ChangeTracker": {
-        "required": [
-          "context"
-        ],
-        "type": "object",
-        "properties": {
-          "autoDetectChangesEnabled": {
-            "type": "boolean"
-          },
-          "lazyLoadingEnabled": {
-            "type": "boolean"
-          },
-          "queryTrackingBehavior": {
-            "$ref": "#/components/schemas/QueryTrackingBehavior"
-          },
-          "deleteOrphansTiming": {
-            "$ref": "#/components/schemas/CascadeTiming"
-          },
-          "cascadeDeleteTiming": {
-            "$ref": "#/components/schemas/CascadeTiming"
-          },
-          "context": {
-            "$ref": "#/components/schemas/DbContext"
-          },
-          "debugView": {
-            "$ref": "#/components/schemas/DebugView"
-          }
-        }
-      },
-      "DatabaseFacade": {
-        "type": "object",
-        "properties": {
-          "currentTransaction": {
-            "$ref": "#/components/schemas/IDbContextTransaction"
-          },
-          "autoTransactionsEnabled": {
-            "type": "boolean"
-          },
-          "autoTransactionBehavior": {
-            "$ref": "#/components/schemas/AutoTransactionBehavior"
-          },
-          "autoSavepointsEnabled": {
-            "type": "boolean"
-          },
-          "providerName": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      },
-      "DbContext": {
-        "type": "object",
-        "properties": {
-          "database": {
-            "$ref": "#/components/schemas/DatabaseFacade"
-          },
-          "changeTracker": {
-            "$ref": "#/components/schemas/ChangeTracker"
-          },
-          "model": {
-            "$ref": "#/components/schemas/IModel"
-          },
-          "contextId": {
-            "$ref": "#/components/schemas/DbContextId"
-          }
-        }
-      },
-      "DbContextId": {
-        "type": "object",
-        "properties": {
-          "instanceId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "lease": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          }
-        }
-      },
-      "DebugView": {
-        "type": "object",
-        "properties": {
-          "longView": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "shortView": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      },
-      "IConstructorBindingFactory": {
-        "type": "object"
-      },
-      "IDbContextTransaction": {
-        "type": "object",
-        "properties": {
-          "transactionId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "supportsSavepoints": {
-            "type": "boolean"
-          }
-        }
-      },
-      "IModel": {
-        "type": "object",
-        "properties": {
-          "modelDependencies": {
-            "$ref": "#/components/schemas/RuntimeModelDependencies"
-          },
-          "modelId": {
-            "type": "string",
-            "format": "uuid"
-          }
-        }
-      },
-      "IParameterBindingFactories": {
-        "type": "object"
-      },
-      "ITypeMappingSource": {
-        "type": "object"
       },
       "Pet": {
         "type": "object",
@@ -570,9 +413,6 @@
           }
         }
       },
-      "QueryTrackingBehavior": {
-        "type": "integer"
-      },
       "Request_adoption": {
         "type": "object",
         "properties": {
@@ -606,28 +446,6 @@
           },
           "adoption_state": {
             "type": "boolean"
-          },
-          "reason": {
-            "type": "string"
-          }
-        }
-      },
-      "RuntimeModelDependencies": {
-        "required": [
-          "typeMappingSource",
-          "constructorBindingFactory",
-          "parameterBindingFactories"
-        ],
-        "type": "object",
-        "properties": {
-          "typeMappingSource": {
-            "$ref": "#/components/schemas/ITypeMappingSource"
-          },
-          "constructorBindingFactory": {
-            "$ref": "#/components/schemas/IConstructorBindingFactory"
-          },
-          "parameterBindingFactories": {
-            "$ref": "#/components/schemas/IParameterBindingFactories"
           }
         }
       },
@@ -661,12 +479,7 @@
             "type": "string"
           },
           "rol": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
+            "type": "boolean"
           }
         }
       },
@@ -698,41 +511,6 @@
               "null",
               "string"
             ]
-          }
-        }
-      },
-      "zozo_context": {
-        "type": "object",
-        "properties": {
-          "pets": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Pet"
-            }
-          },
-          "users": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/User"
-            }
-          },
-          "request_Adoptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Request_adoption"
-            }
-          },
-          "database": {
-            "$ref": "#/components/schemas/DatabaseFacade"
-          },
-          "changeTracker": {
-            "$ref": "#/components/schemas/ChangeTracker"
-          },
-          "model": {
-            "$ref": "#/components/schemas/IModel"
-          },
-          "contextId": {
-            "$ref": "#/components/schemas/DbContextId"
           }
         }
       }

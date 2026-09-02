@@ -10,7 +10,7 @@ namespace API_pets.Models
 
         public DbSet<Pet> pets { get; set; }
         public DbSet<User> users { get; set; }
-        public DbSet<Request_adoption> request_Adoptions  { get; set; }
+        public DbSet<Request_adoption> adoption_request  { get; set; }
 
     }
 }
