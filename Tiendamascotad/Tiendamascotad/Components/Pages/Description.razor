@@ -1,5 +1,5 @@
 ﻿@page "/card/{id:int}"
-
+@inject NavigationManager navigationManager
 @inject Zozo_services zozo_services
 @inject Usuario_actual usuario_actual
 @rendermode InteractiveServer
@@ -29,38 +29,34 @@
     string mes;
     public async Task adoptar()
     {
-        adoptada = "Adopted!";
-        if (usuario_actual ==null)
-        {
-            Console.WriteLine("debe iniciar sesion");
-        }
-        else { 
-        Solicitud solicitud = new Solicitud
+        
+            adoptada = "Adopted!";
+            Solicitud solicitud = new Solicitud
+                {
+                    id_user = usuario_actual.id_user,
+                    id_pet = mascota.id,
+                    date_request = DateOnly.FromDateTime(DateTime.Now),
+                    adoption_state = false,
+
+                };
+
+            var solicitudCreada = await zozo_services.CrearSolicitud(solicitud);
+
+            if (solicitudCreada == null)
             {
-                id_user = usuario_actual.id_user,
-                id_pet = mascota.id,
-                date_request = DateOnly.FromDateTime(DateTime.Now),
-                adoption_state = false,
+                mes = "nada";
+                return;
+            }
+            
+            await Task.Delay(60000);
 
-            };
+            solicitudCreada.adoption_state = true;
 
-        var solicitudCreada = await zozo_services.CrearSolicitud(solicitud);
-
-        if (solicitudCreada == null)
-        {
-            mes = "nada";
-            return;
+            await zozo_services.ActualizarSolicitud(
+                solicitudCreada.id_adoption, solicitudCreada
+            );
         }
-        // navigationManager.NavigateTo("/login");
-        await Task.Delay(60000);
-
-        solicitudCreada.adoption_state = true;
-
-        await zozo_services.ActualizarSolicitud(
-            solicitudCreada.id_adoption, solicitudCreada
-        );
-    }
     }
 
     
-}
+

@@ -271,35 +271,6 @@
         }
       }
     },
-    "/pets/registrar": {
-      "post": {
-        "tags": [
-          "API pets"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Pet"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pet"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/WeatherForecast": {
       "get": {
         "tags": [

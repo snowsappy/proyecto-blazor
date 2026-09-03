@@ -24,9 +24,10 @@ h1[b-sstcj1mdlm] {
     flex-direction: row;
     background-color: #f1f7fd;
     padding: 1%;
-    width: 60%;
+    width: 100%;
+    min-width:80%;
     height: 35vh;
-
+    min-height:25vh;
     border-radius: 20px;
     overflow: hidden;
     justify-content: center;
@@ -43,7 +44,7 @@ h1[b-sstcj1mdlm] {
 
 .imagen[b-sstcj1mdlm] {
     background-color: aqua;
-    width: 50%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -64,7 +65,7 @@ h1[b-sstcj1mdlm] {
     display: flex;
     flex-direction: column;
     align-items:start;
-    width: 100%;
+    width: 80%;
     gap:20px;
     padding:2%;
     font-family: "baloo 2";
@@ -102,18 +103,16 @@ h1[b-sstcj1mdlm] {
 .main[b-sstcj1mdlm] {
     display: grid;
     grid-template-columns: 1.7fr 1fr;
-    grid-template-rows: 1fr 1fr;
+   
     justify-content: center;
     align-items:start;
     width: 100%;
     min-width: 80%;
-    height: 100vh;
-    min-width: 80vh;
+    
     padding: 120px;
     background: #eef4ff;
-    
     font-family: Arial, sans-serif;
-  
+    gap:25px;
 }
 
 .user-info[b-sstcj1mdlm]{
@@ -129,10 +128,6 @@ h1[b-sstcj1mdlm] {
 
 }
 
-.main[b-sstcj1mdlm] {
-    min-height: 100vh;
-   
-}
 
 
 
@@ -141,12 +136,21 @@ h1[b-sstcj1mdlm] {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    width:100%;
+    
 
 }
 
 
+.grupo-2[b-sstcj1mdlm]{
+   display:grid;
+   row-gap:25px;
+}
+.menu[b-sstcj1mdlm]{
 
-
+    width:100%;
+    height:100%;
+}
 .user-info[b-sstcj1mdlm] {
     background: white;
     border-radius: 25px;
@@ -157,7 +161,7 @@ h1[b-sstcj1mdlm] {
     min-height: 180px;
 }
 
-    .user-info > div[b-sstcj1mdlm] {
+    .user-info  div[b-sstcj1mdlm] {
         width: 130px;
         height: 130px;
         flex-shrink: 0;
@@ -287,19 +291,16 @@ h1[b-sstcj1mdlm] {
     }
 
 
-.grupo-2[b-sstcj1mdlm] {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items:center;
-}
 
 
 .directions[b-sstcj1mdlm] {
     background: white;
+    width: 100%;
+    height: 20vh;
     border-radius: 25px;
     padding: 30px;
-    min-height: 180px;
+    
+
 }
 
     .directions p:first-child[b-sstcj1mdlm] {
@@ -320,7 +321,7 @@ h1[b-sstcj1mdlm] {
 .contacto[b-sstcj1mdlm] {
     background: white;
     border-radius: 25px;
-    padding: 30px;
+    padding: 25px
 }
 
     .contacto ul[b-sstcj1mdlm] {
@@ -351,5 +352,4 @@ h1[b-sstcj1mdlm] {
     color: #5951ae;
     font-weight: bold;
 }
-
 

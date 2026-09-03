@@ -1,7 +1,5 @@
 /* CSS for Description component */
-body[b-dyrz89iihj] {
-    background-color: #c7def6;
-}
+
 .body[b-dyrz89iihj] {
     align-items: center;
     justify-content: center;
@@ -12,7 +10,7 @@ body[b-dyrz89iihj] {
     padding: 25px;
     gap: 25px;
     overflow: hidden;
-    
+    /*background: #dfecfa;*/
 }
 
 
@@ -27,10 +25,12 @@ body[b-dyrz89iihj] {
     min-height: 70vh;
     min-width: 80%;
     padding: 3%;
-    grid-template-rows:auto auto 1fr 1fr auto;
+    grid-template-rows: auto auto auto 1fr auto;
     background-color: #f5f5f5;
-    align-items:start;
-    line-height:1;
+    align-items: start;
+    line-height: 1;
+    background: #dfecfa;
+    padding-top:25%;
 }
 
 .info[b-dyrz89iihj] {
@@ -57,11 +57,12 @@ body[b-dyrz89iihj] {
 
     .info button[b-dyrz89iihj] {
         border: none;
-        border-radius: 50px;
+        border-radius: 20px;
         color: azure;
-        background: #785df5;
+        background: #8c7ffa;
         font-size: 2rem;
-
+        padding: 2%;
+      
     }
     
 .image[b-dyrz89iihj] {
@@ -81,15 +82,24 @@ body[b-dyrz89iihj] {
     object-position:center;
 }
 .hero[b-dyrz89iihj] {
-   
     display: flex;
     flex-direction: row;
     gap: 2%;
-    
-
+    justify-content: start;
+    align-content: start;
+    height: 12%;
+    max-width: 100%;
+    min-width: 20%;
+   
 }
     .hero p[b-dyrz89iihj] {
+        margin-top: 2%;
         background-color: #c7def6;
-        color: #e0ecf9;
-        width:atan2()
+        color: #2e4e9f;
+        align-content:center;
+        font-size: 1rem;
+        padding: 1.5% 2% 3% 2%;
+        text-align: center;
+        border-radius: 20px;
+        font-weight:500;
     }

@@ -327,9 +327,7 @@ a[b-y4ol2jjobw]{
 }
 /* /Components/Pages/Description.razor.rz.scp.css */
 /* CSS for Description component */
-body[b-dyrz89iihj] {
-    background-color: #c7def6;
-}
+
 .body[b-dyrz89iihj] {
     align-items: center;
     justify-content: center;
@@ -340,7 +338,7 @@ body[b-dyrz89iihj] {
     padding: 25px;
     gap: 25px;
     overflow: hidden;
-    
+    /*background: #dfecfa;*/
 }
 
 
@@ -355,10 +353,12 @@ body[b-dyrz89iihj] {
     min-height: 70vh;
     min-width: 80%;
     padding: 3%;
-    grid-template-rows:auto auto 1fr 1fr auto;
+    grid-template-rows: auto auto auto 1fr auto;
     background-color: #f5f5f5;
-    align-items:start;
-    line-height:1;
+    align-items: start;
+    line-height: 1;
+    background: #dfecfa;
+    padding-top:25%;
 }
 
 .info[b-dyrz89iihj] {
@@ -385,11 +385,12 @@ body[b-dyrz89iihj] {
 
     .info button[b-dyrz89iihj] {
         border: none;
-        border-radius: 50px;
+        border-radius: 20px;
         color: azure;
-        background: #785df5;
+        background: #8c7ffa;
         font-size: 2rem;
-
+        padding: 2%;
+      
     }
     
 .image[b-dyrz89iihj] {
@@ -409,17 +410,26 @@ body[b-dyrz89iihj] {
     object-position:center;
 }
 .hero[b-dyrz89iihj] {
-   
     display: flex;
     flex-direction: row;
     gap: 2%;
-    
-
+    justify-content: start;
+    align-content: start;
+    height: 12%;
+    max-width: 100%;
+    min-width: 20%;
+   
 }
     .hero p[b-dyrz89iihj] {
+        margin-top: 2%;
         background-color: #c7def6;
-        color: #e0ecf9;
-        width:atan2()
+        color: #2e4e9f;
+        align-content:center;
+        font-size: 1rem;
+        padding: 1.5% 2% 3% 2%;
+        text-align: center;
+        border-radius: 20px;
+        font-weight:500;
     }
 /* /Components/Pages/Home.razor.rz.scp.css */
 /* CSS for Home component */
@@ -471,17 +481,17 @@ body[b-dyrz89iihj] {
     .parte1[b-2ro7ndw66d]::after {
         content: "When you adopt, you are not only gaining a loyal friend—you are also giving an animal  the opportunity to live a better life.";
         position: absolute;
-        top: 65%;
-     
+        top: 60%;
+        margin:0% 10%;
         font-size: 1.5rem;
         font-family: "manjari";
         font-weight:200;
         line-height:1;
         text-align:center;
-        animation:cargar-texto-b-2ro7ndw66d 2.5s ease-in;
-        left:50%;
-        transform:translate(-50%);
-       width:80%;
+        animation:cargar-texto-b-2ro7ndw66d 2.2s ease-in;
+        
+        
+       
     }
 .parte1 p[b-2ro7ndw66d]{
     font-family:"baloo 2";
@@ -549,15 +559,15 @@ body[b-dyrz89iihj] {
 /* /Components/Pages/Login.razor.rz.scp.css */
 /* CSS for Contactanos component */
 
-body[b-r2zx9ov90y] {
+.body[b-r2zx9ov90y] {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #71ace9;
 }
 
 .formulario-contenedor[b-r2zx9ov90y] {
@@ -685,9 +695,10 @@ h1[b-sstcj1mdlm] {
     flex-direction: row;
     background-color: #f1f7fd;
     padding: 1%;
-    width: 60%;
+    width: 100%;
+    min-width:80%;
     height: 35vh;
-
+    min-height:25vh;
     border-radius: 20px;
     overflow: hidden;
     justify-content: center;
@@ -704,7 +715,7 @@ h1[b-sstcj1mdlm] {
 
 .imagen[b-sstcj1mdlm] {
     background-color: aqua;
-    width: 50%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -725,7 +736,7 @@ h1[b-sstcj1mdlm] {
     display: flex;
     flex-direction: column;
     align-items:start;
-    width: 100%;
+    width: 80%;
     gap:20px;
     padding:2%;
     font-family: "baloo 2";
@@ -763,18 +774,16 @@ h1[b-sstcj1mdlm] {
 .main[b-sstcj1mdlm] {
     display: grid;
     grid-template-columns: 1.7fr 1fr;
-    grid-template-rows: 1fr 1fr;
+   
     justify-content: center;
     align-items:start;
     width: 100%;
     min-width: 80%;
-    height: 100vh;
-    min-width: 80vh;
+    
     padding: 120px;
     background: #eef4ff;
-    
     font-family: Arial, sans-serif;
-  
+    gap:25px;
 }
 
 .user-info[b-sstcj1mdlm]{
@@ -790,10 +799,6 @@ h1[b-sstcj1mdlm] {
 
 }
 
-.main[b-sstcj1mdlm] {
-    min-height: 100vh;
-   
-}
 
 
 
@@ -802,12 +807,21 @@ h1[b-sstcj1mdlm] {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    width:100%;
+    
 
 }
 
 
+.grupo-2[b-sstcj1mdlm]{
+   display:grid;
+   row-gap:25px;
+}
+.menu[b-sstcj1mdlm]{
 
-
+    width:100%;
+    height:100%;
+}
 .user-info[b-sstcj1mdlm] {
     background: white;
     border-radius: 25px;
@@ -818,7 +832,7 @@ h1[b-sstcj1mdlm] {
     min-height: 180px;
 }
 
-    .user-info > div[b-sstcj1mdlm] {
+    .user-info  div[b-sstcj1mdlm] {
         width: 130px;
         height: 130px;
         flex-shrink: 0;
@@ -948,19 +962,16 @@ h1[b-sstcj1mdlm] {
     }
 
 
-.grupo-2[b-sstcj1mdlm] {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items:center;
-}
 
 
 .directions[b-sstcj1mdlm] {
     background: white;
+    width: 100%;
+    height: 20vh;
     border-radius: 25px;
     padding: 30px;
-    min-height: 180px;
+    
+
 }
 
     .directions p:first-child[b-sstcj1mdlm] {
@@ -981,7 +992,7 @@ h1[b-sstcj1mdlm] {
 .contacto[b-sstcj1mdlm] {
     background: white;
     border-radius: 25px;
-    padding: 30px;
+    padding: 25px
 }
 
     .contacto ul[b-sstcj1mdlm] {
@@ -1012,5 +1023,4 @@ h1[b-sstcj1mdlm] {
     color: #5951ae;
     font-weight: bold;
 }
-
 

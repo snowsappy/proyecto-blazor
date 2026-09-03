@@ -3,6 +3,7 @@
 @inject Zozo_services zozo_services
 @inject NavigationManager NavigationManager
 @inject Usuario_actual usuario_actual
+<div class="body">
 @if (inicio == true) {
     <h2>Contáctanos</h2>
     <div class="formulario-contenedor">
@@ -77,6 +78,7 @@
 
 }
 <p>@mensaje</p>
+</div>
 @code
 {
 
@@ -99,7 +101,7 @@
     public async Task registrar()
     {
         bool resultado = await zozo_services.RegistrarPersona(persona);
-        persona.rol = 1;
+        persona.rol = false;
         if (resultado)
         {
             mensaje = "User registered successfully";

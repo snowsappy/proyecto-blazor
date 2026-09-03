@@ -13,5 +13,19 @@ namespace Tiendamascotad.Components.Models
         public string description { get; set; }
         public string image { get; set; }
         public bool state { get; set; }
+
+        public int CalcularEdad(DateOnly fechaNacimiento)
+        {
+            DateOnly hoy = DateOnly.FromDateTime(DateTime.Today);
+
+            int edad = hoy.Year - fechaNacimiento.Year;
+
+            if (fechaNacimiento > hoy.AddYears(-edad))
+            {
+                edad--;
+            }
+
+            return edad;
+        }
     }
-};
+}

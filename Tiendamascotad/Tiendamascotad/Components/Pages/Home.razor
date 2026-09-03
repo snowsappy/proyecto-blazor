@@ -35,7 +35,7 @@
 
 <div class="tarjetas">
  
-@foreach(var item in mascotas)
+    @foreach (var item in mascotas.Where(m => m.state))
 {
     
      <Mascotas mascota="item"></Mascotas>

@@ -80,12 +80,20 @@ app.MapPut("/request/{id}", async (int id, Request_adoption datos, zozo_context 
 app.MapPost("/users/registrar", async (User nuevoUsuario, zozo_context context) =>
 {
     Console.WriteLine("LLEGÓ EL REGISTRO");
-    Console.WriteLine($"Email: {nuevoUsuario.email}");
+
+    var existe = await context.users
+        .AnyAsync(u => u.id_user == nuevoUsuario.id_user);
+
+    if (existe)
+    {
+        return Results.BadRequest("El usuario ya existe");
+    }
+
     context.users.Add(nuevoUsuario);
     await context.SaveChangesAsync();
 
-    
-    return Results.Ok("User registered successfully");
+    return Results.Ok(nuevoUsuario);
+
 });
 app.MapDelete("/users/{id}", async (int id, zozo_context context) =>
 {
@@ -129,16 +137,6 @@ app.MapPost("/login", async (Ayudalogin login, zozo_context context) =>
 
 //    return Results.Ok("succefull login");
 //});
-
-
-//repasar a profundidad esto
-app.MapPost("/pets/registrar", async (Pet newpet, zozo_context context) =>
-{
-    context.pets.Add(newpet);
-    await context.SaveChangesAsync();
-
-    return newpet;
-});
 
 
 app.MapPost("/request", async (Request_adoption request, zozo_context context) =>
