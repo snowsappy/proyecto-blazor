@@ -6,7 +6,7 @@
 @if (inicio == true) {
     <h2>Contáctanos</h2>
     <div class="formulario-contenedor">
-        <EditForm Model="persona" OnValidSubmit="registrar">
+        <EditForm Model="persona" OnValidSubmit="registrar" OnInvalidSubmit="nofunciona">
 
             <DataAnnotationsValidator  />
 
@@ -51,7 +51,7 @@
             }
 @if (inicio == false)
 {
-    
+   
     <div class="formulario-contenedor">
         <EditForm Model="login" OnValidSubmit="iniciar">
 
@@ -76,8 +76,10 @@
     </div>
 
 }
+<p>@mensaje</p>
 @code
 {
+
     bool inicio = false;
     public void registrarse()
     {
@@ -90,7 +92,10 @@
 
     Persona persona = new();
     string mensaje;
-
+    public void nofunciona()
+    {
+        mensaje = "usuario invalido";
+    }
     public async Task registrar()
     {
         bool resultado = await zozo_services.RegistrarPersona(persona);

@@ -2,19 +2,22 @@
 
 
 
-    .tarjeta[b-y4ol2jjobw] {
-        padding: 3%;
-        width: 100%;
-        height: 50vh;
-        border-radius: 20px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        color: #322b4a;
-    }
+.tarjeta[b-y4ol2jjobw] {
+    padding: 3%;
+    width: 100%;
+    min-width: 70%;
+    height: 50vh;
+    min-height: 30vh;
+   
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #322b4a;
+}
 
     .tarjeta ul[b-y4ol2jjobw] {
         list-style: none;
@@ -22,7 +25,7 @@
         flex-direction: row;
         gap: 2vh;
         width: auto;
-       
+        
         position: absolute;
         display: flex;
         justify-content:center;
@@ -32,23 +35,23 @@
         
     }
 
-        .tarjeta li[b-y4ol2jjobw] {
-          
-            padding:2% 0%;
-            width:130px;
-       
-            background-color: #ffccd3;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 20px;
-            font-family: "Quicksand";
-            font-size:1rem;
-            font-weight: 600;
-            color: #a20f3a;
-            text-align: justify;
-        }
+    .tarjeta li[b-y4ol2jjobw] {
+        padding: 2% 0%;
+        width: 11vh;
+        min-width: 7vh;
+        background-color: rgb(216,214,254,0.8 );
+        background-color: #e1dce9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        font-family: "Quicksand";
+        font-size: 1rem;
+        font-weight: 600;
+        color: #3d1e94;
+        text-align: justify;
+    }
 
     .contenido[b-y4ol2jjobw] {
         background-color: aqua;
@@ -92,3 +95,18 @@
             color: #f5f5f5;
         }
 
+.and[b-y4ol2jjobw]{
+    display:flex;
+    flex-direction:column;
+    gap:0%;
+    margin:0%;
+    line-height:1.1;
+    
+}
+.and p[b-y4ol2jjobw]{
+    font-size:1rem;
+}
+a[b-y4ol2jjobw]{
+    text-decoration:none;
+    color:#f5f5f5;
+}

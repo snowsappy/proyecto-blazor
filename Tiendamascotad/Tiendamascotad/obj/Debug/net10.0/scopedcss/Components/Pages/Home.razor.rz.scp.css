@@ -23,11 +23,11 @@
     
     animation: rodar-abajo-b-2ro7ndw66d 1s ease-in;
 }
-#title[b-2ro7ndw66d] {
-
-    text-align:center;
-    font-family:"baloo 2";
-    color:#3b3838;
+.title[b-2ro7ndw66d] {
+    text-align: center;
+    font-family: "baloo 2";
+    color: #1f1a2e;
+    margin: 3% 0% 2% 0%;
 }
     .parte1[b-2ro7ndw66d]::before {
         content: "Your lovely pet is waiting for you";
@@ -115,9 +115,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin: 5% 7%;
+    
     width: 86%;
-    margin: 5% auto;
+    margin: 0% auto;
     justify-content: center;
     align-content: center;
+    margin-bottom:2%;
 }

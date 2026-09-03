@@ -217,19 +217,22 @@ a[b-0264clh1uw]{
 
 
 
-    .tarjeta[b-y4ol2jjobw] {
-        padding: 3%;
-        width: 100%;
-        height: 50vh;
-        border-radius: 20px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        color: #322b4a;
-    }
+.tarjeta[b-y4ol2jjobw] {
+    padding: 3%;
+    width: 100%;
+    min-width: 70%;
+    height: 50vh;
+    min-height: 30vh;
+   
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #322b4a;
+}
 
     .tarjeta ul[b-y4ol2jjobw] {
         list-style: none;
@@ -237,7 +240,7 @@ a[b-0264clh1uw]{
         flex-direction: row;
         gap: 2vh;
         width: auto;
-       
+        
         position: absolute;
         display: flex;
         justify-content:center;
@@ -247,23 +250,23 @@ a[b-0264clh1uw]{
         
     }
 
-        .tarjeta li[b-y4ol2jjobw] {
-          
-            padding:2% 0%;
-            width:130px;
-       
-            background-color: #ffccd3;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 20px;
-            font-family: "Quicksand";
-            font-size:1rem;
-            font-weight: 600;
-            color: #a20f3a;
-            text-align: justify;
-        }
+    .tarjeta li[b-y4ol2jjobw] {
+        padding: 2% 0%;
+        width: 11vh;
+        min-width: 7vh;
+        background-color: rgb(216,214,254,0.8 );
+        background-color: #e1dce9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        font-family: "Quicksand";
+        font-size: 1rem;
+        font-weight: 600;
+        color: #3d1e94;
+        text-align: justify;
+    }
 
     .contenido[b-y4ol2jjobw] {
         background-color: aqua;
@@ -307,9 +310,26 @@ a[b-0264clh1uw]{
             color: #f5f5f5;
         }
 
+.and[b-y4ol2jjobw]{
+    display:flex;
+    flex-direction:column;
+    gap:0%;
+    margin:0%;
+    line-height:1.1;
+    
+}
+.and p[b-y4ol2jjobw]{
+    font-size:1rem;
+}
+a[b-y4ol2jjobw]{
+    text-decoration:none;
+    color:#f5f5f5;
+}
 /* /Components/Pages/Description.razor.rz.scp.css */
 /* CSS for Description component */
-
+body[b-dyrz89iihj] {
+    background-color: #c7def6;
+}
 .body[b-dyrz89iihj] {
     align-items: center;
     justify-content: center;
@@ -317,64 +337,90 @@ a[b-0264clh1uw]{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px;
-    gap: 50px;
+    padding: 25px;
+    gap: 25px;
+    overflow: hidden;
+    
 }
+
+
 
 .info[b-dyrz89iihj] {
-    display: grid;
-    grid-column: 1fr;
-}
-
-.image[b-dyrz89iihj] {
     width: 100%;
-    min-width: 80%;
     height: 95vh;
-    min-height: 90%;
-    border-radius: 20px;
-    background-color: aquamarine;
-    overflow:hidden;
-}
-
-.info[b-dyrz89iihj] {
-    width: 100%;
-    height: 100%;
     display: grid;
+    border-radius: 20px;
     justify-content: space-around;
     align-content: center;
-    flex-direction: column;
-    padding: 2% 0%;
-    grid-template-rows: 0.2fr 1fr 4fr 0.5fr 0.5fr;
+    min-height: 70vh;
+    min-width: 80%;
+    padding: 3%;
+    grid-template-rows:auto auto 1fr 1fr auto;
+    background-color: #f5f5f5;
+    align-items:start;
+    line-height:1;
 }
 
 .info[b-dyrz89iihj] {
     font-family: "manjari";
 }
+    
+    .info h5[b-dyrz89iihj]{
 
+        font-size:1.5rem;
+
+        
+    }
     .info h1[b-dyrz89iihj] {
-        font-size: clamp(5rem,2rem,2.5rem);
+        font-size: clamp(7rem,5rem,2.5rem);
         font-family:"baloo 2"
     }
 
     .info p[b-dyrz89iihj] {
         font-size: 3rem;
         font-family:"Quicksand";
-        font-weight:200
+        font-weight:200;
+        
     }
 
     .info button[b-dyrz89iihj] {
         border: none;
         border-radius: 50px;
         color: azure;
-        background: #1f2c4c;
-        font-size:2rem;
-    }
-.image img[b-dyrz89iihj]{
+        background: #785df5;
+        font-size: 2rem;
 
+    }
+    
+.image[b-dyrz89iihj] {
+    width: 100%;
+    min-height:70vh;
+    min-width: 80%;
+    height: 95vh;
+    min-height: 90%;
+    border-radius: 20px;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+.image img[b-dyrz89iihj]{
+    height:100%;
     width:100%;
     object-fit:fill;
     object-position:center;
 }
+.hero[b-dyrz89iihj] {
+   
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    
+
+}
+    .hero p[b-dyrz89iihj] {
+        background-color: #c7def6;
+        color: #e0ecf9;
+        width:atan2()
+    }
 /* /Components/Pages/Home.razor.rz.scp.css */
 /* CSS for Home component */
 *[b-2ro7ndw66d]{
@@ -401,11 +447,11 @@ a[b-0264clh1uw]{
     
     animation: rodar-abajo-b-2ro7ndw66d 1s ease-in;
 }
-#title[b-2ro7ndw66d] {
-
-    text-align:center;
-    font-family:"baloo 2";
-    color:#3b3838;
+.title[b-2ro7ndw66d] {
+    text-align: center;
+    font-family: "baloo 2";
+    color: #1f1a2e;
+    margin: 3% 0% 2% 0%;
 }
     .parte1[b-2ro7ndw66d]::before {
         content: "Your lovely pet is waiting for you";
@@ -493,11 +539,12 @@ a[b-0264clh1uw]{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin: 5% 7%;
+    
     width: 86%;
-    margin: 5% auto;
+    margin: 0% auto;
     justify-content: center;
     align-content: center;
+    margin-bottom:2%;
 }
 /* /Components/Pages/Login.razor.rz.scp.css */
 /* CSS for Contactanos component */

@@ -79,6 +79,8 @@ app.MapPut("/request/{id}", async (int id, Request_adoption datos, zozo_context 
 //repasar a profundidad esto
 app.MapPost("/users/registrar", async (User nuevoUsuario, zozo_context context) =>
 {
+    Console.WriteLine("LLEGÓ EL REGISTRO");
+    Console.WriteLine($"Email: {nuevoUsuario.email}");
     context.users.Add(nuevoUsuario);
     await context.SaveChangesAsync();
 
@@ -93,7 +95,7 @@ app.MapDelete("/users/{id}", async (int id, zozo_context context) =>
     {
         return Results.NotFound();
     }
-
+     
     context.users.Remove(usuario);
     await context.SaveChangesAsync();
 
@@ -136,20 +138,6 @@ app.MapPost("/pets/registrar", async (Pet newpet, zozo_context context) =>
     await context.SaveChangesAsync();
 
     return newpet;
-});
-app.MapDelete("/pets/{id}", async (int id, zozo_context context) =>
-{
-    var pet = await context.pets.FindAsync(id);
-
-    if (pet == null)
-    {
-        return Results.NotFound();
-    }
-
-    context.pets.Remove(pet);
-    await context.SaveChangesAsync();
-
-    return Results.Ok();
 });
 
 

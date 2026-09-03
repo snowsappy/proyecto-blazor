@@ -4,17 +4,17 @@
 @inject Usuario_actual usuario_actual
 @rendermode InteractiveServer
 <div class="body">
-<div class="image">
-    <img src="@mascota.image" alt="foto mascota" />
-</div>
-<div class=" info">
-    <h5>@mascota.specie</h5>
-    <h1>@mascota.name</h1>
-    <p>@mes</p>
-    <p>@mascota.description</p>
-    <div><p>@mascota.birthdate</p> <p>@mascota.breed</p></div>
-    <button class="boton" @onclick="adoptar">@adoptada</button>
-</div>
+    <div class="image">
+        <img src="@mascota.image" alt="foto mascota" />
+    </div>
+    <div class=" info">
+        <h5>@mascota.specie</h5>
+        <h1>@mascota.name</h1>
+    
+        <p>@mascota.description</p>
+        <div class="hero"><p>@mascota.birthdate</p> <p>@mascota.breed</p></div>
+        <button class="boton" @onclick="adoptar">@adoptada</button>
+    </div>
 </div>
 
 @code {
