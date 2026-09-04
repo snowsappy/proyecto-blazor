@@ -1,8 +1,5 @@
 /* CSS for Mascotadoptada component */
 
-body[b-sstcj1mdlm] {
-    background-color: #eef4ff;
-}
 
 h1[b-sstcj1mdlm] {
     text-align: center;
@@ -108,11 +105,13 @@ h1[b-sstcj1mdlm] {
     align-items:start;
     width: 100%;
     min-width: 80%;
-    
+    min-height:100%;
     padding: 120px;
     background: #eef4ff;
     font-family: Arial, sans-serif;
     gap:25px;
+    height:100vh;
+    max-height:500vh ;
 }
 
 .user-info[b-sstcj1mdlm]{

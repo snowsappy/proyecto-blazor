@@ -95,48 +95,18 @@ app.MapPost("/users/registrar", async (User nuevoUsuario, zozo_context context) 
     return Results.Ok(nuevoUsuario);
 
 });
-app.MapDelete("/users/{id}", async (int id, zozo_context context) =>
-{
-    var usuario = await context.users.FindAsync(id);
 
-    if (usuario == null)
-    {
-        return Results.NotFound();
-    }
-     
-    context.users.Remove(usuario);
-    await context.SaveChangesAsync();
-
-    return Results.Ok();
-});
 app.MapPost("/login", async (Ayudalogin login, zozo_context context) =>
 {
     var usuario = await context.users
         .FirstOrDefaultAsync(u => u.email == login.email);
 
     if (usuario == null || usuario.password != login.password)
-        return Results.BadRequest("Email o contraseña incorrectos");
+        return Results.BadRequest(" usuario invalido");
 
     return Results.Ok(usuario);
 });
 
-//app.MapPost("/login", async (string email, string password, zozo_context context) =>
-//{
-//    var usuario = await context.users
-//        .FirstOrDefaultAsync(u => u.email == email);
-
-//    if (usuario == null)
-//    {
-//        return Results.NotFound("you are not registered");
-//    }
-
-//    if (usuario.password != password)
-//    {
-//        return Results.BadRequest("wrong password");
-//    }
-
-//    return Results.Ok("succefull login");
-//});
 
 
 app.MapPost("/request", async (Request_adoption request, zozo_context context) =>
@@ -153,6 +123,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers(); 
 
 app.Run();

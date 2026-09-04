@@ -3,10 +3,11 @@ wwwroot\images\9297178.jpg
 wwwroot\images\9297185.jpg
 wwwroot\images\9297190.jpg
 wwwroot\images\9297208.jpg
-wwwroot\images\gato c.jpg
+wwwroot\images\gato c.png
 wwwroot\images\gato en la naturalea.jpg
 wwwroot\images\gato serio.jpg
 wwwroot\images\logo.png
+wwwroot\images\max.jpg
 wwwroot\images\owl.jpg
 wwwroot\images\owl2.jpg
 wwwroot\images\parrot 2.jpg
@@ -15,10 +16,11 @@ wwwroot\images\python 2.jpg
 wwwroot\images\python.jpg
 wwwroot\images\ragdoll 2.jpg
 wwwroot\images\siamese.jpg
+wwwroot\images\upscalemedia-transformed.jpeg
 Components\Layout\ReconnectModal.razor.js
-C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.6\build\..\_framework\blazor.web.js
-C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.6\build\..\_framework\blazor.server.js
+C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\build\..\_framework\blazor.web.js
+C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\build\..\_framework\blazor.server.js
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\wwwroot\app.css
 C:\Users\Aprendiz\Documents\proyecto-blazor\Tiendamascotad\Tiendamascotad\Components\Layout\ReconnectModal.razor.js
-C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.6\_framework\blazor.web.js
-C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.6\_framework\blazor.server.js
+C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\_framework\blazor.web.js
+C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\_framework\blazor.server.js
